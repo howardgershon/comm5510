@@ -80,3 +80,6 @@ a:visited{
   display: none;
 }
 
+#note{
+    font-size: 5pt;
+}
