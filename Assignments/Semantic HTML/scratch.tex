@@ -1,0 +1,281 @@
+\documentclass[graybox]{svmono}
+%\documentclass{article}
+% Change "article" to "report" to get rid of page number on title page
+%\usepackage{amsmath,amsfonts,amsthm,amssymb}
+\usepackage{setspace}
+\usepackage{fancyhdr}
+\usepackage{verbatim}
+\usepackage{alltt}
+\usepackage{lastpage}
+\usepackage{extramarks}
+%\usepackage{mathabx}
+\usepackage{parskip}
+\usepackage{mathtools}
+\usepackage{bbm}
+\usepackage{amsfonts}
+\usepackage{cancel}
+\usepackage{chngpage}
+\usepackage{tikz}
+\usepackage{soul}
+\usepackage{array}
+\usepackage{sectsty}
+\usepackage{ascii}
+\allsectionsfont{\bfseries \sffamily}
+%\usepackage{subfig}
+%\usepackage{subfigure}
+\usepackage{caption}
+\usepackage{wrapfig}
+\usepackage{subcaption}
+\usepackage{enumerate}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{graphicx,float,wrapfig}
+\usepackage{ifthen}
+\usepackage{listings}
+%\usepackage{fontspec}
+%\setmainfont{Courier New}
+%\usepackage{courier}
+%\usepackage[T1]{fontenc}
+%\usepackage{concmath}      
+%\usepackage{makeidx}         % allows index generation
+%\usepackage{graphicx}        % standard LaTeX graphics tool
+                             % when including figure files
+%\usepackage{multicol}        % used for the two-column index
+%\usepackage[bottom]{footmisc}
+\def\changemargin#1#2{\list{}{\rightmargin#2\leftmargin#1}\item[]}
+\let\endchangemargin=\endlist 
+
+\renewcommand{\arraystretch}{1.5}
+
+%\renewcommand{\familydefault}{\sfhelvetica}
+
+\newcommand{\bigO}{\ensuremath{\mathcal{O}}}% big-O notation/symbol
+\newcommand{\tb}[1]{{\color{blue}\tt{#1}}}
+
+\definecolor{MyDarkGreen}{rgb}{0.31,0.37,0.75}
+
+\makeatletter 
+  \renewcommand\verbatim@font{\normalfont\ttfamily\color{MyDarkGreen}}
+\makeatother
+
+% For faster processing, load Matlab syntax for listings
+\lstloadlanguages{Matlab}%
+%\lstset{language=Matlab,
+%        frame=single,
+%        basicstyle=\small\asciifamily,
+%        keywordstyle=[1]\color{Blue}\bf,
+%        keywordstyle=[2]\color{Purple},
+%        keywordstyle=[3]\color{Blue}\underbar,
+%        identifierstyle=,
+%        commentstyle=\usefont{T1}{pcr}{m}{sl}\color{MyDarkGreen}\small,
+%        stringstyle=\color{Purple},
+%        showstringspaces=false,
+%        tabsize=5,
+%        % Put standard MATLAB functions not included in the default
+%        % language here
+%        morekeywords={xlim,ylim,var,alpha,factorial,poissrnd,normpdf,normcdf},
+%        % Put MATLAB function parameters here
+%        morekeywords=[2]{on, off, interp},
+%        % Put user defined functions here
+%        morekeywords=[3]{FindESS},
+%        morecomment=[l][\color{Blue}]{...},
+%        numbers=left,
+%        firstnumber=1,
+%        numberstyle=\tiny\asciifamily\color{Blue},
+%        stepnumber=1
+%        }
+
+\lstset{ language=R,
+       basicstyle=\footnotesize\asciifamily,              % Standardschrift
+       numbers=left,                                          % Ort der Zeilennummern
+       numberstyle=\tiny\asciifamily\color{blue},             % Stil der Zeilennummern
+       stepnumber=1,                                          % Abstand zwischen den Zeilennummern
+       numbersep=5pt,                                         % Abstand der Nummern zum Text
+       tabsize=2,                                             % Groesse von Tabs
+       extendedchars=true,                                    %
+       breaklines=true,                                       % Zeilen werden Umgebrochen
+       %keywordstyle=\color{red},
+       %frame=b,
+       %keywords={break,case,catch,continue,else,elseif,end,for,function,
+       %global,if,otherwise,persistent,return,switch,try,while},
+       %basicstyle=\ttfamily,
+       keywordstyle=\color{blue},
+       commentstyle=\color{red},
+       stringstyle=\color{dkgreen},
+       breakatwhitespace=true,
+%      keywordstyle=[1]\color{Blue}\bf,
+%      keywordstyle=[2]\color{Purple},
+%      keywordstyle=[3]\color{Blue}\underbar,
+       showspaces = false                             %
+       %keywordstyle=[4]\textbf, \sqrt{\sqrt{               %
+       commentstyle=\color{red},                          % Farbe der String
+       showspaces=false,                                      % Leerzeichen anzeigen ?
+       showtabs=false,                                        % Tabs anzeigen ?
+       xleftmargin=17pt,
+       framexleftmargin=17pt,
+       numberstyle=\tiny\asciifamily\color{blue},
+       framexrightmargin=5pt,
+       framexbottommargin=.5in,
+       %backgroundcolor=\color{lightgray},
+       showstringspaces=false      % Leerzeichen in Strings anzeigen ?
+}
+
+\DeclareCaptionFont{blue}{\color{blue}}
+\captionsetup[lstlisting]{singlelinecheck=false, labelfont={blue}, textfont={blue}}
+\usepackage{caption}
+\DeclareCaptionFont{white}{\color{white}}
+\DeclareCaptionFormat{listing}{\colorbox[cmyk]{0.43, 0, 0, 0}{\parbox{\textwidth}{\hspace{15pt}#1#2#3}}}
+\captionsetup[lstlisting]{format=listing,labelfont=white,textfont=white, singlelinecheck=false, margin=0pt, font={bf,footnotesize}}
+
+
+
+% Margins
+\topmargin=-0.45in      %
+\evensidemargin=0in     %
+\oddsidemargin=0in      %
+\textwidth=6.5in        %
+\textheight=9.0in       %
+\headsep=0.25in         %
+
+% Homework Specific Information
+\newcommand{\hmwkTitle}{}
+\newcommand{\hmwkSubTitle}{}
+\newcommand{\hmwkDueDate}{}
+\newcommand{\hmwkClass}{}
+\newcommand{\hmwkClassTime}{}
+\newcommand{\hmwkClassInstructor}{}
+\newcommand{\hmwkAuthorName}{}
+
+%Header and Footer
+%\pagestyle{fancy}                                                       %
+%\lhead{\hmwkAuthorName}                                                 %
+%\chead{\hmwkClass\ (\hmwkClassInstructor\ \hmwkClassTime): \hmwkTitle}  %
+%\rhead{\firstxmark}           d                                          %
+%\lfoot{\lastxmark}                                                      %
+%\cfoot{}                                                                %
+%\rfoot{Page\ \thepage\ of\ \protect\pageref{LastPage}}                  %
+%\renewcommand\headrulewidth{0.4pt}                                      %
+%\renewcommand\footrulewidth{0.4pt}                                      %
+
+%For debugging
+%\tracingall
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Some tools I picked up courtesy of
+% Theodore P. Pavlic
+
+\newcommand{\enterProblemHeader}[1]{\nobreak\extramarks{#1}{#1 continued on next page\ldots}\nobreak%
+                                    \nobreak\extramarks{#1 (continued)}{#1 continued on next page\ldots}\nobreak}%
+\newcommand{\exitProblemHeader}[1]{\nobreak\extramarks{#1 (continued)}{#1 continued on next page\ldots}\nobreak%
+                                   \nobreak\extramarks{#1}{}\nobreak}%
+
+\newlength{\labelLength}
+\newcommand{\labelAnswer}[2]
+  {\settowidth{\labelLength}{#1}%
+   \addtolength{\labelLength}{0.25in}%
+   \changetext{}{-\labelLength}{}{}{}%
+   \noindent\fbox{\begin{minipage}[c]{\columnwidth}#2\end{minipage}}%
+   \marginpar{\fbox{#1}}%
+
+   % We put the blank space above in order to make sure this
+   % \marginpar gets correctly placed.
+   \changetext{}{+\labelLength}{}{}{}}%
+
+\setcounter{secnumdepth}{0}
+\newcommand{\homeworkProblemName}{}%
+\newcounter{homeworkProblemCounter}%
+\newenvironment{homeworkProblem}[1][Problem \arabic{homeworkProblemCounter}]%
+  {\stepcounter{homeworkProblemCounter}%
+   \renewcommand{\homeworkProblemName}{#1}  % i commented this out 9.23.11
+   \section{\homeworkProblemName}%
+   \enterProblemHeader{\homeworkProblemName}}%
+  {\exitProblemHeader{\homeworkProblemName}}%
+
+\newcommand{\problemAnswer}[1]
+  {\noindent\fbox{\begin{minipage}[c]{\columnwidth}#1\end{minipage}}}%
+
+\newcommand{\problemLAnswer}[1]
+  {\labelAnswer{\homeworkProblemName}{#1}}
+
+\newcommand{\homeworkSectionName}{}%
+\newlength{\homeworkSectionLabelLength}{}%
+\newenvironment{homeworkSection}[1]%
+  {% We put this space here to make sure we're not connected to the above.
+   % Otherwise the changetext can do funny things to the other margin
+
+   \renewcommand{\homeworkSectionName}{#1}%
+   \settowidth{\homeworkSectionLabelLength}{\homeworkSectionName}%
+   \addtolength{\homeworkSectionLabelLength}{0.25in}%
+   \changetext{}{-\homeworkSectionLabelLength}{}{}{}%
+   \subsection{\homeworkSectionName}%
+   \enterProblemHeader{\homeworkProblemName\ [\homeworkSectionName]}}%
+  {\enterProblemHeader{\homeworkProblemName}%
+
+   % We put the blank space above in order to make sure this margin
+   % change doesn't happen too soon (otherwise \sectionAnswer's can
+   % get ugly about their \marginpar placement.
+   \changetext{}{+\homeworkSectionLabelLength}{}{}{}}%
+
+\newcommand{\sectionAnswer}[1]
+  {% We put this space here to make sure we're disconnected from the previous
+   % passage
+
+   \noindent\fbox{\begin{minipage}[c]{\columnwidth}#1\end{minipage}}%
+   \enterProblemHeader{\homeworkProblemName}\exitProblemHeader{\homeworkProblemName}%
+   \marginpar{\fbox{\homeworkSectionName}}%
+
+   % We put the blank space above in order to make sure this
+   % \marginpar gets correctly placed.
+   }%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Make title
+\title{\vspace{2in}\textsf{\textmd{\textbf{\hmwkClass:\ \hmwkTitle\ifthenelse{\equal{\hmwkSubTitle}{}}{}{\\\hmwkSubTitle}}}\\\normalsize\vspace{0.1in}\\\vspace{0.1in}}\large{\textit{\hmwkClassInstructor\ \hmwkClassTime}}\vspace{3in}}
+\date{}
+\author{\textbf{\hmwkAuthorName}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\indentitem}{\setlength\itemindent{25pt}} 
+
+\begin{document}
+\setcounter{problem}{1}
+\setcounter{chapter}{1}
+%\maketitle
+
+%\clearpage
+%\newpage
+%$$
+%\newpage
+
+\begin{center}
+\section*{Graded Components}
+\end{center}
+
+\setlength{\parindent}{2cm}
+\parindent
+
+\subsection*{PARTICIPATION: 10\%}
+Regular participation and attendance is critical to successfully learning web design. You will also need to be in class to learn how to do weekly assignments. You will also want to participate in class discussions to help you answer questions and improve learning.
+\subsection*{IN-CLASS ASSIGNMENTS: 30\%}
+An	extension	of	the	in	class	activity	where	you	will	create	or	edit	a	web	page	or	discuss	an	existing	web	page	
+based	on	concepts	presented	during	the	week’s	lecture.
+\subsection*{MODULES: 40\%}
+Modules	are	the	rough	equivalent	of	a	midterm.	There	are	four modules	that	address	different	web	coding	
+techniques.	Each	will	count	for	10\% of	your	final	grade. The	first	module	is	done	individually	and	meant	to	
+demonstrate	each	students’	coding	abilities.	The	remaining	modules	are	completed	as	a	group	and	must	be	
+collaborative	and	cooperatively	completed.
+\begin{enumerate}[1.]
+\item Three-page	demonstration	website	\\
+Due:	January 27,	2015
+\item HTML5	- Semantic,	structural	and	navigational	markup.	\\
+Due:	February	17,	2015
+\item Responsive	Design	– CSS3	media	queries,	SVG	and	other	“mobile	first”	techniques.	\\
+Due:	March	24,	2015
+\end{enumerate}
+\subsection*{FINAL	PROJECT: 20\%}
+This is	a comprehensive	project.	You	will be	given specifications	for a small	web	application	that will require applying responsive design techniques and JavaScript interactive elements.\\
+Due:	April	28,	2015
+
+\end{document}
