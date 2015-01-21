@@ -60,8 +60,23 @@ a:visited{
   margin-top: 10px;
   margin-bottom: 10px;
 
+
+
 }
 
-.content{
+#con1{
   display: none;
 }
+
+#con2{
+  display: none;
+}
+
+#con3{
+  display: none;
+}
+
+#con4{
+  display: none;
+}
+
