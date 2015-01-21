@@ -1,33 +1,35 @@
 <!DOCTYPE html>
 <html>
-    <head>
+
+        <head>
         <title> Semantic HTML </title>
 
         <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css' />
+
         <link rel='spreadsheet' href='css/main.css' type='text/css' />
         <script src='js/kode.js'></script>
 
     </head>
     <body>
         <header> Graded Components </header>
-        <nav> <a href='#one' id='aone'>PARTICIPATION</a> <a href='#two' id='atwo'>IN-CLASS ACTIVITIES</a> <a href='#three' id='athree'>MODULES</a> <a href='#four' id='afour'>FINAL PROJECT</a></nav>
+        <nav> <a id='aone' onClick="showMeTheMoney('con1')" >PARTICIPATION</a> <a onClick="showMeTheMoney('con2')" id='atwo'>IN-CLASS ACTIVITIES</a> <a onClick="showMeTheMoney('con3')" id='athree'>MODULES</a> <a onClick="showMeTheMoney('con4') id='afour'>FINAL PROJECT</a></nav>
 
         <main>
             <section id='one'>
                 <div class='name'> PARTICIPATION 10% </div>
-                <div class='content'>
+                <div class='content' id='con1'>
                     Regular participation and attendance is critical to successfully learning web design. You will also need to be in class to learn how to do weekly assignments. You will also want to participate in class discussions to help you answer questions and improve learning.
                 </div>
             </section>
             <section id='two'>
                 <div class='name'> IN-CLASS ACTIVITIES 30% </div>
-                <div class='content'>
+                <div class='content' id='con2'>
                     An extension of the in class activity where you will create or edit a web page or discuss an existing web page based on concepts presented during the weeks lecture.
                 </div>
             </section>
             <section id='three'>
                 <div class='name'> MODULES 40% </div>
-                <div class='content'>
+                <div class='content' id='con3'>
                     Modules are the rough equivalent of a midterm. There are four modules that address different web coding techniques. Each will count for 10% of your final grade. The first module is done individually and meant to demonstrate each students coding abilities. The remaining modules are completed as a group and must be collaborative and cooperatively complete.
                     <ol>
                         <li> Three-page demonstration website <br> Due: January 27, 2015 </li>
@@ -38,8 +40,9 @@
             </section>
             <section id='four'>
                 <div class='name'> FINAL PROJECT 20% </div>
-                <div class='content'> This is a comprehensive project. You will be given specifications for a small web application that will require applying responsive design techniques and JavaScript interactive elements. <br> Due: April 28, 2015</div>
+                <div class='content' id='con4'> This is a comprehensive project. You will be given specifications for a small web application that will require applying responsive design techniques and JavaScript interactive elements. <br> Due: April 28, 2015</div>
             </section>
         </main>
     </body>
+
 </html>

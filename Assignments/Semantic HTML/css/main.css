@@ -1,4 +1,67 @@
 body {
-    font-family: 'Source Code Pro';
+  font-family: 'Source Code Pro';
 }
 
+header {
+  height: 100px;
+  width: 100%;
+  text-align: center;
+  font-size: 40pt;
+}
+
+nav {
+  background-color: #D0C6B1;
+  display: flex;
+  justify-content: space-between;
+  text-align:center;
+}
+
+a {
+  padding: 5px;
+  display: inline-block;
+  text-decoration:none;
+
+}
+
+a:visited{
+  color: blue;
+}
+
+#one > .name {
+  color:white;
+  background-color: #06A2CB;
+  padding: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+}
+
+#two > .name {
+  color:white;
+  background-color: #EBB035;
+  padding: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+}
+
+#three > .name {
+  color:white;
+  background-color: #DD1E2F;
+  padding: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#four > .name {
+  color:white;
+  background-color: #218559;
+  padding: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+}
+
+.content{
+  display: none;
+}
