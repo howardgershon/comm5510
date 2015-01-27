@@ -27,9 +27,11 @@ h1 {
   letter-spacing: 10px;
 }
 nav ul li {
-  display:inline;
+  display:inline-block;
   list-style-type: none;
   text-decoration: none;
+  zoom: 1;
+  width: 50%;
 }
 
 a {
