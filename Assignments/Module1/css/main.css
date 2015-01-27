@@ -47,4 +47,6 @@ a.visited {
   width: 200px;
   height: 300px;
   display: none;
+  word-wrap: break-word;
+  border: 1px;
 }
