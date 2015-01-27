@@ -10,6 +10,8 @@ var math = document.getElementById('math');
 var code = document.getElementById('code');
 var info = document.getElementById('info');
 
-fam.addEventListener('mouseover', function(){
-  info.style.display = block;
+window.addEventListener('load', function(){
+  fam.addEventListener('mouseover', function(){
+    info.style.display = block;
+  });
 });
