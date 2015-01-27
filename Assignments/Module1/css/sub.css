@@ -12,6 +12,10 @@ body {
   width: 25%;
 }
 
+header {
+  text-align: center;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
