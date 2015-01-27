@@ -10,6 +10,6 @@ var math = docuement.getElementById('math');
 var code = docuement.getElementById('code');
 var info = docuement.getElementById('info');
 
-fam.addEventListener('mouseover'function(){
+fam.addEventListener('mouseover', function(){
   info.style.display = block;
 });
