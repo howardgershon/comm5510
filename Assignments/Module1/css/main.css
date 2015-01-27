@@ -38,3 +38,12 @@ a.visited {
     text-decoration: none;
     color: white;
 }
+
+#info{
+  margin: 100px;
+  text-align: center;
+  background-color: #a0596b;
+  color: white;
+  width: 25%;
+  display: none;
+}
