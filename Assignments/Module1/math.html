@@ -11,6 +11,10 @@
   <link rel='stylesheet' href='css/sub.css' type='text/css'>
   <script src='js/kode1.js'></script>
 
+  <!-- This is for the latex rendering -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+  <script src="http://dreasgrech.com/upload/jslatex/jquery.jslatex.js"></script>
+
   <!-- [if it IE 9]>
   <script src='../Semantic HTML/js/html5shiv.js'> </script>
   <!e[endif]-->
@@ -21,6 +25,13 @@
   <nav> </nav>
 
   <main>
+    <div class='latex'>
+      \begin{align*}
+      \text{cov}[x_i, x_j] &= \mathbb{E} [(x_i - \mathbb{E}[x_i])(x_j - \mathbb{E}[x_j])]\\
+      &=\mathbb{E}\left[(x_i - \mathbb{E}[x_i])\left\{\sum_{k \in \text{pa}_j}\,w_{jk}(x_k - \mathbb{E}[x_k])+\sqrt{v_j}\epsilon_j\right\} \right ]\\
+      &=\sum_{k \in \text{pa}_j}\,w_{jk}\,\text{cov}[x_i, x_j] + I_{ij}v_j
+      \end{align*}
+    </div>
     <section id='one'>
 
     </section>

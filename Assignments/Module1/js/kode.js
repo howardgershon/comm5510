@@ -36,3 +36,9 @@ window.addEventListener('load', function(){
     info.style.display = 'none';
   });
 });
+
+// for the latex rendering
+
+$(function () {
+  $(".latex").latex();
+});
