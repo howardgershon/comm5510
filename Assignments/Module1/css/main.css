@@ -5,6 +5,7 @@ body {
   margin: 0;
   background-image : url('../assets/train.jpg');
   background-size: cover;
+  background-repeat: no-repeat;
 }
 #box{
   margin: 100px;

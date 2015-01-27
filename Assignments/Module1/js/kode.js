@@ -1,9 +1,9 @@
 
-var content = document.getElementById('box');
-
-window.addEventListener('scroll', function(){
-  content.style.opacity = (window.innerHeight-3*window.scrollY)/window.innerHeight;
-}, false);
+// var content = document.getElementById('box');
+//
+// window.addEventListener('scroll', function(){
+//   content.style.opacity = (window.innerHeight-3*window.scrollY)/window.innerHeight;
+// }, false);
 
 var fam = document.getElementById('fam');
 var math = document.getElementById('math');
