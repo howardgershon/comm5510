@@ -9,7 +9,7 @@ body {
   background-repeat: no-repeat;
 }
 #box{
-  margin: auto;
+  margin: 100px auto 100px auto;
   text-align: center;
   background-color: #55134e;
   color: white;
