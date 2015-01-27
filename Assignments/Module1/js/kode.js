@@ -5,10 +5,10 @@ window.addEventListener('scroll', function(){
   content.style.opacity = (window.innerHeight-3*window.scrollY)/window.innerHeight;
 }, false);
 
-var fam = docuement.getElementById('fam');
-var math = docuement.getElementById('math');
-var code = docuement.getElementById('code');
-var info = docuement.getElementById('info');
+var fam = document.getElementById('fam');
+var math = document.getElementById('math');
+var code = document.getElementById('code');
+var info = document.getElementById('info');
 
 fam.addEventListener('mouseover', function(){
   info.style.display = block;
