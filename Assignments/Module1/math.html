@@ -19,35 +19,13 @@
   <script src='../Semantic HTML/js/html5shiv.js'> </script>
   <!e[endif]-->
 
-  <script>
-    $(function () {
-      $(".latex").latex();
-    });
-  </script>
-
-  <script>
-  function renderLatex () {
-    document.getElementById("eqneditor").submit();
-    var eqn = document.eqneditor.eqn.value;
-    document.getElementById("result").innerHTML += "<div class='latex'> " + eqn + "</div>";
-  }
-  </script>
-
 </head>
 <body>
   <header> <h1> Mathematics </h1> </header>
   <nav> </nav>
 
   <main>
-    <center>
-    <div class='latex'>
-      \begin{align*}
-      \text{cov}[x_i, x_j] &= \mathbb{E} [(x_i - \mathbb{E}[x_i])(x_j - \mathbb{E}[x_j])]\\
-      &=\mathbb{E}\left[(x_i - \mathbb{E}[x_i])\left\{\sum_{k \in \text{pa}_j}\,w_{jk}(x_k - \mathbb{E}[x_k])+\sqrt{v_j}\epsilon_j\right\} \right ]\\
-      &=\sum_{k \in \text{pa}_j}\,w_{jk}\,\text{cov}[x_i, x_j] + I_{ij}v_j
-      \end{align*}
-    </div>
-  </center>
+
     <section id='one'>
 
     </section>
