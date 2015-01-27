@@ -12,6 +12,6 @@ var info = document.getElementById('info');
 
 window.addEventListener('load', function(){
   fam.addEventListener('mouseover', function(){
-    info.style.display = block;
+    info.style.display = 'inline';
   });
 });
