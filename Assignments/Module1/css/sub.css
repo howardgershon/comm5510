@@ -86,3 +86,15 @@ img {
     margin-left: 22%;
 
 }
+
+.jq {
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  background-color: #F38630;
+  border-radius: 5px;
+  /*position:relative;*/
+  text-align: center;
+  padding: 10px;
+  color: white;
+}
