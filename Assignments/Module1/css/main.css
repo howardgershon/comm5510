@@ -26,7 +26,7 @@ h1 {
 }
 li {
   position: relative;
-  display:inline-block;
+  display:table;
   list-style-type: none;
   text-decoration: none;
   text-align: center;
