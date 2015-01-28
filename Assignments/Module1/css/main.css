@@ -24,7 +24,7 @@ h1 {
   font-weight: 900;
   letter-spacing: 10px;
 }
-nav ul li {
+li {
   position: relative;
   display:inline-block;
   list-style-type: none;
