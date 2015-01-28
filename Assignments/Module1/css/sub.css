@@ -82,6 +82,14 @@ img {
 
 }
 
+.num {
+  float:left; !important
+  width: auto;
+  height: auto;
+  max-width: 400px; !important
+
+}
+
 #pf {
     margin-left: 22%;
 
