@@ -82,3 +82,14 @@ img {
     margin-left: 22%;
 
 }
+
+.fade {
+  background-color: #72cbdb;
+
+#num1 {
+  float:left; !important
+  width:20%; !important
+  background-color: #72cbdb;
+  display: inline-block;
+  width: 40%;
+}
