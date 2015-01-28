@@ -495,7 +495,7 @@ svg.append("g")
 .attr("class", "y axis")
 .call(yAxis)
 
-var tooltip = d3.select("body").append("div")
+var tooltip = d3.select("#vis").append("div")
 .attr("class", "tooltip")
 .style("opacity", 0);
 
