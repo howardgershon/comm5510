@@ -82,12 +82,3 @@ img {
     margin-left: 22%;
 
 }
-
-#num1 {
-  padding: 100px;
-  float:left; !important
-  width:20%; !important
-  background-color: #72cbdb;
-  display: inline-block;
-  width: 40%;
-}
