@@ -480,7 +480,7 @@ var colors = {" Democrat":"blue", " Republican":"red", " Independent":"green"};
 //    .x(function(d) { return xScale(d[" ideology"]); })
 //    .y(function(d) { return yScale(d[" leadership"]); });
 
-var svg = d3.select("#vis").append("svg")
+var svg = d3.select(".vis").append("svg")
 .attr("width", width + margin.left + margin.right)
 .attr("height", height + margin.top + margin.bottom)
 .append("g")
@@ -495,7 +495,7 @@ svg.append("g")
 .attr("class", "y axis")
 .call(yAxis)
 
-var tooltip = d3.select("#vis").append("div")
+var tooltip = d3.select(".vis").append("div")
 .attr("class", "tooltip")
 .style("opacity", 0);
 

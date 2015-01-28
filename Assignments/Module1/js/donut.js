@@ -3,7 +3,7 @@ height = 400,
 endAngle = 2 * Math.PI,
 colors = d3.scale.category20();
 
-var svg = d3.select("#vis").append("svg")
+var svg = d3.select(".vis").append("svg")
 .attr("class", "pie")
 .attr("height", height)
 .attr("width", width);
