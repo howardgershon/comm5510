@@ -29,6 +29,7 @@ nav ul li {
   list-style-type: none;
   text-decoration: none;
   text-align: center;
+  zoom: 1;
   width:33%;
 }
 
