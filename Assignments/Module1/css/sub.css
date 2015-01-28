@@ -61,3 +61,12 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
+
+#vis {
+    float:right;
+    width: 20%;
+}
+
+#pp {
+  margin-right: 22%;
+}
