@@ -84,6 +84,7 @@ img {
 }
 
 #num1 {
+  padding: 100px;
   float:left; !important
   width:20%; !important
   background-color: #72cbdb;
