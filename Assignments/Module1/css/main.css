@@ -31,6 +31,8 @@ nav ul li {
   text-align: center;
   width: 33%;
   margin: auto;
+  vertical-align:middle;
+  
 }
 
 a {
