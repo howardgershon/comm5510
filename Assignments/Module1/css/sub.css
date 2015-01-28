@@ -16,10 +16,7 @@ header {
   text-align: center;
 }
 
-nav {
-  display: flex;
-  justify-content: space-between;
-}
+
 h1 {
   font-weight: 900;
   letter-spacing: 10px;
