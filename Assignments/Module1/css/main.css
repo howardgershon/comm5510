@@ -21,6 +21,7 @@ body {
 nav {
   display: flex;
   justify-content: space-between;
+  text-align:center;
 }
 h1 {
   font-weight: 900;
@@ -30,7 +31,7 @@ nav ul li {
   display:inline-block;
   list-style-type: none;
   text-decoration: none;
-  zoom: 1;
+  margin:auto;
 }
 
 a {
