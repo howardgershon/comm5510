@@ -75,7 +75,8 @@ img {
 
 #num {
   float:left; !important
-  width:20%; !important
+  width:100px; !important
+
 }
 
 #pf {
