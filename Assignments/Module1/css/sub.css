@@ -34,7 +34,6 @@ nav ul li {
 a {
   text-decoration: none;
   color: blue;
-
 }
 
 a.visited {
@@ -55,4 +54,8 @@ section h3 {
 
 section p {
   margin: 2.5em;
+}
+
+section img {
+  margin: 0 auto 0 auto;
 }
