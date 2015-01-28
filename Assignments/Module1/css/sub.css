@@ -73,7 +73,7 @@ img {
   height: 400px;
 }
 
-.num {
-  float:left;
-  width:20%;
+img.num {
+  float:left; !important
+  width:20%; !important
 }
