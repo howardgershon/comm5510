@@ -72,3 +72,8 @@ img {
   margin-right: 22%;
   height: 400px;
 }
+
+.num {
+  float:left;
+  width:20%;
+}
