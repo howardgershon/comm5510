@@ -13,22 +13,22 @@ body {
   text-align: center;
   background-color: #55134e;
   color: white;
-  display: inline-block;
-  zoom: 1;
-  width: 50%;
+  width: 25%;
 }
 
-nav > li {
-  text-align:center;
-  width: 33%;
+nav {
+  display: flex;
+  justify-content: space-between;
 }
 h1 {
   font-weight: 900;
   letter-spacing: 10px;
 }
 nav ul li {
+  display:inline;
   list-style-type: none;
   text-decoration: none;
+  margin: 2.8em;
 }
 
 a {
