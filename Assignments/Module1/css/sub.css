@@ -72,12 +72,7 @@ img {
   height: 400px;
 }
 
-.blue{
-  /**background-color: #3399CC;*/
-  float: left;
-  width: 600px;
-}
-
-.topper {
-  height: 500px;
+.twitter {
+  height: 200px;
+  width: 50%;
 }
