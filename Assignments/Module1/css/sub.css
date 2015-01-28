@@ -75,7 +75,7 @@ img {
 
 #num {
   float:left; !important
-  width:100px; !important
+  max-width: 300px; !important
 
 }
 
