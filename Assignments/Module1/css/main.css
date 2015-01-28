@@ -18,17 +18,17 @@ body {
   width: 50%;
 }
 
-nav {
+nav > li {
   display: flex;
   justify-content: space-between;
   text-align:center;
+  width: 33%;
 }
 h1 {
   font-weight: 900;
   letter-spacing: 10px;
 }
 nav ul li {
-  display:inline-block;
   list-style-type: none;
   text-decoration: none;
   margin:auto;
