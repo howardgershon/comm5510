@@ -24,13 +24,11 @@ h1 {
   font-weight: 900;
   letter-spacing: 10px;
 }
-li {
+nav > li {
   display: block;
   list-style-type: none;
   text-decoration: none;
   text-align: center;
-  zoom: 1;
-  width:33%;
 }
 
 a {
