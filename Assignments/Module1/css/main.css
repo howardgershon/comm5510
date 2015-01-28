@@ -29,6 +29,8 @@ nav ul li {
   list-style-type: none;
   text-decoration: none;
   text-align: center;
+  width: 33%;
+  margin: auto;
 }
 
 a {
