@@ -24,7 +24,7 @@ h1 {
   font-weight: 900;
   letter-spacing: 10px;
 }
-nav > li {
+nav ul li {
   display: block;
   list-style-type: none;
   text-decoration: none;
