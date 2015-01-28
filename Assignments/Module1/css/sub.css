@@ -72,7 +72,7 @@ img {
   height: 400px;
 }
 
-.twitter {
+iframe.twitter {
   height: 300px;
   width: 90%;
 }
