@@ -19,8 +19,6 @@ body {
 }
 
 nav > li {
-  display: flex;
-  justify-content: space-between;
   text-align:center;
   width: 33%;
 }
