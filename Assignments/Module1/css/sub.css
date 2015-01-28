@@ -71,3 +71,9 @@ img {
   margin-right: 22%;
   height: 400px;
 }
+
+.blue{
+  /**background-color: #3399CC;*/
+  float: left;
+  width: 600px;
+}
