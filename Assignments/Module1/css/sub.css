@@ -42,13 +42,6 @@ a.visited {
   color: white;
 }
 
-#info{
-  text-align: center;
-  padding: 30px;
-  background-color: #a0596b;
-  color: white;
-  width: 30%;
-  display: none;
-  word-wrap: break-word;
-  border: 1px;
+section {
+  margin: 100px;
 }
