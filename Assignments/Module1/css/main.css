@@ -26,9 +26,7 @@ h1 {
 }
 
 nav ul {
-  display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
+  margin: auto;
 }
 
 nav ul li {
@@ -36,7 +34,7 @@ nav ul li {
   list-style-type: none;
   text-decoration: none;
   text-align: center;
-  width: 33%;
+  width: auto;
 
 }
 
