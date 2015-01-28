@@ -25,7 +25,7 @@ h1 {
   letter-spacing: 10px;
 }
 nav ul li {
-  display:inline;
+  display:inline-block;
   list-style-type: none;
   text-decoration: none;
   text-align: center;
