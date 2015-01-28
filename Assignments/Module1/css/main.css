@@ -25,7 +25,7 @@ h1 {
   letter-spacing: 10px;
 }
 li {
-  position: relative;
+  display: block;
   list-style-type: none;
   text-decoration: none;
   text-align: center;
