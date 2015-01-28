@@ -46,6 +46,7 @@ section {
 }
 
 section h2 {
+  clear: both;
   width: 100%;
   background-color: #ef7351;
   color: white;
