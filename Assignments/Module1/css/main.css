@@ -34,10 +34,8 @@ nav ul li {
   list-style-type: none;
   text-decoration: none;
   text-align: center;
-  width: 33%;
+  width: auto;
   margin: auto;
-  float: left;
-  padding-right: 0;
 
 }
 
