@@ -41,16 +41,8 @@ ul#sub1,ul#sub2,ul#sub3 {
 
 #navcontainer li:hover ul#sub1, #navcontainer li:hover ul#sub2, #navcontainer li:hover ul#sub3 {
   display:block;
-  position:absolute;
-  padding-top:.5em;
-  margin-left:.1em;
-  border: none;
 }
 
 #navcontainer li:hover ul#sub1 li a, #navcontainer li:hover ul#sub2 li a, #navcontainer li:hover ul#sub3 li a {
   display:block;
-  width:10em;
-  border:none;
-  padding:2px;
-  font-size:.8rem;
 }
