@@ -5,6 +5,10 @@
   list-style-type: none;
 }
 
+ul#sub1,ul#sub2,ul#sub3 {
+  display:none;
+}
+
 #navcontainer a
 {
   display: block;
