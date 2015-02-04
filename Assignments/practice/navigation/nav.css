@@ -14,6 +14,7 @@
   padding: .2em 1em;
   color: #fff;
   background-color: #036;
+  border: 1px;
 }
 
 #navcontainer ul li a:hover {
