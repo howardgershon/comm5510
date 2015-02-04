@@ -4,5 +4,11 @@
   padding: 0;
 }
 
-#navcontainer ul li { display: inline; }
-#navcontainer ul li a { text-decoration: none; }
+#navcontainer ul li {
+  display: inline;
+}
+
+#navcontainer ul li a {
+  text-decoration: none;
+  padding: .2em 1em;
+}
