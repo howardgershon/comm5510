@@ -1,0 +1,24 @@
+body {
+  background-image: url('./assets/Icecream3.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.sidebar1 {
+    float: left;
+    width: 20%;
+    padding: 0 20px 0 10px;
+}
+
+.main {
+    float: left;
+    width: 60%;
+    padding: 0 20px 0 20px;
+    border-left: dashed 1px rgb(153,153, 153);
+    border-right: dashed 1px rgb(153,153, 153);
+}
+
+.sidebar2 {
+    float: right;
+    width: 20%;
+    padding: 0 10px 0 20px;
+}
