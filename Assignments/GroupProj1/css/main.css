@@ -3,7 +3,13 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   font-family: 'Homemade Apple', cursive;
+  color: white;
 }
+
+header {
+  font-size: 50pt;
+}
+
 .lside {
     float: left;
     width: 10%;
