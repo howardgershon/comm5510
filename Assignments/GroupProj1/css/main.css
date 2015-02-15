@@ -2,23 +2,24 @@ body {
   background-image: url('../assets/Icecream3.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+  font-family: 'Homemade Apple', cursive;
 }
-.sidebar1 {
+.lside {
     float: left;
-    width: 20%;
+    width: 10%;
     padding: 0 20px 0 10px;
 }
 
 .main {
     float: left;
-    width: 60%;
+    width: 75%;
     padding: 0 20px 0 20px;
     border-left: dashed 1px rgb(153,153, 153);
     border-right: dashed 1px rgb(153,153, 153);
 }
 
-.sidebar2 {
+.rside {
     float: right;
-    width: 20%;
+    width: 10%;
     padding: 0 10px 0 20px;
 }
