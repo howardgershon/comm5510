@@ -60,15 +60,20 @@ footer{
 }
 @media only screen and (min-width:801px) {
  body{ background-color:cornflowerblue;}
- 
+
 }
 
 @media only screen and (max-width:800px) {
  body{ background-color:pink;}
+ .image{
+   width: 200px;
+ }
 }
 
 @media only screen and (max-width:420px) {
     body{  background-color: #b5a789;}
-
+    .image{
+      width: 80%;
+    }
 
 }
