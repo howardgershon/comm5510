@@ -58,8 +58,9 @@ dt {
 footer{
     clear:both;
 }
-@media only screen and (max-width:1024px) {
+@media only screen and (min-width:801px) {
  body{ background-color:cornflowerblue;}
+ 
 }
 
 @media only screen and (max-width:800px) {
