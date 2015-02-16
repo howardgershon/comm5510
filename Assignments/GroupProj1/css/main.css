@@ -30,3 +30,12 @@ header {
     width: 10%;
     padding: 0 10px 0 20px;
 }
+
+.item {
+  font-size: 30pt;
+}
+
+.item:hover{
+  background-color: white;
+  color: black;
+}
