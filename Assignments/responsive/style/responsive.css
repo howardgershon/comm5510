@@ -41,8 +41,13 @@ footer {
   margin:           10px auto;
   font-size:        90%;
 }
-dt .text{
+dt {
   float:left;
+}
+.text{
+  float:left;
+  min-height:270px;
+  line-height:1.4;
 }
 .image{
   float:right;
