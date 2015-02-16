@@ -66,13 +66,14 @@ footer{
 @media only screen and (max-width:800px) {
  body{ background-color:pink;}
  .image{
-   width: 200px;
+   width: 40%;
  }
 }
 
 @media only screen and (max-width:420px) {
     body{  background-color: #b5a789;}
     .image{
+      float: none;
       width: 80%;
     }
 
