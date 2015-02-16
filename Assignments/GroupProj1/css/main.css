@@ -43,6 +43,8 @@ header {
 }
 
 .content > p {
+  font-size: 15pt;
   margin: 20px;
   color: black;
+  font-family: 'Ariel';
 }
