@@ -35,3 +35,9 @@ header {
 .item {
   font-size: 30pt;
 }
+
+.content {
+  border-radius: 25px;
+  background-color: white;
+  opacity: 0.5;
+}
