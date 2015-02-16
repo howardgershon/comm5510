@@ -102,6 +102,10 @@ header {
   font-family: 'Ariel';
 }
 
+.item > a {
+  color: blue;
+}
+
 a {
   text-decoration: none;
   color: white;
