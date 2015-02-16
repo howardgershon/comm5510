@@ -41,7 +41,7 @@ footer {
   margin:           10px auto;
   font-size:        90%;
 }
-.text{
+dt .text{
   float:left;
 }
 .image{
