@@ -67,6 +67,7 @@ footer{
  body{ background-color:pink;}
  .image{
    width: 40%;
+   margin: 2em;
  }
 }
 
@@ -74,6 +75,7 @@ footer{
     body{  background-color: #b5a789;}
     .image{
       float: none;
+      margin: 2em;
       width: 80%;
     }
 
