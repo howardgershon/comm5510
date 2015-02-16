@@ -40,6 +40,9 @@ header {
   border-radius: 25px;
   background-color: white;
   opacity: 0.75;
+}
+
+.content > p {
   margin: 20px;
   color: black;
 }
