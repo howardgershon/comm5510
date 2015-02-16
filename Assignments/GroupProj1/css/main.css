@@ -114,5 +114,6 @@ a:visited {
 
 ul {
   color: black;
+  margin-left:10px;
   list-style-type: circle;
 }
