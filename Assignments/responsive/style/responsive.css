@@ -78,6 +78,9 @@ footer{
  dt {
    margin: 1em;
  }
+ #headerimg img{
+   width: 40%;
+ }
 }
 
 @media only screen and (max-width:420px) {
@@ -87,5 +90,8 @@ footer{
       margin: 2em;
       width: 80%;
     }
-
+    #headerimg img{
+        width: 80%;
+        float:none;
+    }
 }
