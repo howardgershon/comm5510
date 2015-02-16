@@ -44,7 +44,9 @@ footer {
 .text{
   float:left;
 }
-
+.image{
+  float:right;
+}
 
 
 footer{
