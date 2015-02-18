@@ -98,4 +98,10 @@ footer{
         width: 80%;
         float:none;
     }
+    dd{
+      font-size: 2em;
+    }
+    dt{
+      font-size: 1.4em;
+    }
 }
