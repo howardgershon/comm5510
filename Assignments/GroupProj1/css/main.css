@@ -122,6 +122,8 @@ ul {
 }
 
 footer {
+    position: fixed;
+    z-index: -99999;
     clear: both;
     width: 100%;
 }
