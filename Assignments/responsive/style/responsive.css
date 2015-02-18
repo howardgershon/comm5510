@@ -77,6 +77,10 @@ footer{
  }
  dt {
    margin: 1em;
+   font-size: 1em;
+ }
+ dd{
+   font-size: .5em;
  }
  #headerimg img{
    width: 40%;
