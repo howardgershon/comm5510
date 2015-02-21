@@ -20,5 +20,3 @@ $(document).ready(function () {
        $('.menu-icon').toggleClass('on');
     });
 });
-
-//add shaking
