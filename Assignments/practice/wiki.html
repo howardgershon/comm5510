@@ -69,20 +69,8 @@ var ws = new WebSocket('ws://wikimon.hatnote.com/en/');
     var posx = Math.random()*document.documentElement.scrollWidth;
     var posy = Math.random()*document.documentElement.scrollHeight;
 
-
-    //console.log(posy);
-
-    //word.innerHTML=data.page_title;
-
-    //word.appendChild(document.createElement("br"));
-    //word.appendChild(document.createElement("br"));
-
-
     //build info object
     info = {cs : data.change_size, x : posx, y : posy, title : data.page_title, url : data.url, user: data.user };
-    //push
-    //console.log(data);
-    //section.innerHTML = "<a href='"+data.url+"'>" + data.page_title + "</a> <br>" + data.user;
     edits.push(info);
 
     place();
@@ -96,8 +84,6 @@ var ws = new WebSocket('ws://wikimon.hatnote.com/en/');
 
 
 </script>
-<!-- <div id="words">
-</div> <br /> -->
 <div id='canvas'>
 
 </div>
@@ -133,10 +119,6 @@ var ws = new WebSocket('ws://wikimon.hatnote.com/en/');
                     d3.select("#infofoot").style("display", 'block');})
       .on("mouseout", function(d){d3.select(this).style('fill', '#5696bc');});
 
-
-
-
-    //svg.selectAll()
   };
 </script>
 <div id='infofoot'>
