@@ -44,8 +44,6 @@ var infowindow = new google.maps.InfoWindow();
 var yes = 0;
 var no = 0;
 
-//var center = new google.maps.LatLng(40.78, -111.97);
-
 var center = new google.maps.LatLng(39.8333333,-95.5833333);
 var query;
 
@@ -144,14 +142,11 @@ radius: rad
 }
 
 rsvpCirc = new google.maps.Circle(rsvpOpt);
-//setTimeout(rsvpCirc.setMap(null), 1000);
 
 			google.maps.event.addListener(rsvpCirc, 'mouseover', (function(rsvpCirc) {
 				return function() {
 					infowindow.setContent('<b>' + groupName + '<br> <span style="color:' + colr + '">' + resp + '</span> </b> <br>' + memberName + '<br>' + city + ', ' + state);
-					//infowindow.setOptions({maxWidth: 150});
 					infowindow.setPosition(rsvpCirc.center);
-					//console.log(infowindow.position);
 					infowindow.open(map);
 				}
 				})(rsvpCirc));
@@ -163,9 +158,7 @@ rsvpCirc = new google.maps.Circle(rsvpOpt);
 };
 
 var ws = new WebSocket('ws://stream.meetup.com/2/rsvps');
-//ws.onmessage() = function(msg){makeMark(msg.data);};
 	ws.onmessage = function(msg){
-			//var results = document.getElementById('results');
 			var rsvp = JSON.parse(msg.data);
 			var link = rsvp.event['event_url'];
 			var name = rsvp.member['member_name'];
@@ -183,12 +176,10 @@ var ws = new WebSocket('ws://stream.meetup.com/2/rsvps');
 			document.getElementById('yes').innerHTML = yes.toString();
 			document.getElementById('no').innerHTML = no.toString();
 
-//results.appendChild(document.createTextNode(" * " + name + " " + rp + " meetup with " + group + " in " + city + ', ' + state));
-//results.appendChild(document.createElement('br'));
 makeMark(resp, lat, lon, rad, name, group, city, state, link);
 };
 
-// add donut chart here 
+// add donut chart here
 </script>
 </head>
 <body>
