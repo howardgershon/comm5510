@@ -151,6 +151,7 @@ rsvpCirc = new google.maps.Circle(rsvpOpt);
 				}
 				})(rsvpCirc));
 
+      // event listeners
 			google.maps.event.addListener(rsvpCirc, 'mouseout', function () {infowindow.close()});
 
 			google.maps.event.addListener(rsvpCirc, 'click', function() {window.location = link})
