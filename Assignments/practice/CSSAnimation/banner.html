@@ -23,13 +23,26 @@
 
 	}
 
+	@-webkit-keyframes 'logo'{
+		from {
+			left: 120%;
+			-webkit-transform: rotate(0) scale(.75);
+		}
+		50% {
+			-webkit-transform: rotate(-720deg) scale(1.75);
+		}
+		to {
+			-webkit-transform: rotate(0) scale(1);
+		}
+	}
+
 	.logo {
 		-webkit-animation: logo 3s linear;
 		-moz-animation: logo 3s;
 		-o-animation: logo 3s;
 		animation: logo 3s;
 
-	
+
 	}
 
 </style>
