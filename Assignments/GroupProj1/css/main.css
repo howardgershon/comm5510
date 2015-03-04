@@ -50,7 +50,8 @@ table {
 /** our awesome styling **/
 
 body {
-  background-image: url('../assets/Icecream3.jpg');
+  /**background-image: url('../assets/Icecream3.jpg');**/
+  background-color: #6C2D58;
   background-size: cover;
   background-repeat: no-repeat;
   font-family: 'Homemade Apple', cursive;
