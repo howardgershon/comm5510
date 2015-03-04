@@ -5,20 +5,33 @@
 <title>CSS3 Transforms, Transitions and Animations</title>
 <link href="styles.css" rel="stylesheet">
 <style>
+
 	nav a {
 		-webkit-transition: all .5s;
 		-moz-transition: all .5s;
 		-o-transition: all .5s;
 		transition: all .5s;
 	}
+
 	nav a:hover {
 		background-color: red;
 		-webkit-transform: scale(1.2);
 		-moz-webkit-transform: scale(1.2);
 		-o-transform: scale(1.2);
+		-ms-transfomr: scale(1.2);
 		transform: scale(1.2);
 
 	}
+
+	.logo {
+		-webkit-animation: logo 3s linear;
+		-moz-animation: logo 3s;
+		-o-animation: logo 3s;
+		animation: logo 3s;
+
+	
+	}
+
 </style>
 <!--[if lt IE 9]>
 <script src="html5shiv.js"></script>
