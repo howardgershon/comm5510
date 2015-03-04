@@ -5,7 +5,20 @@
 <title>CSS3 Transforms, Transitions and Animations</title>
 <link href="styles.css" rel="stylesheet">
 <style>
+	nav a {
+		-webkit-transition: all .5s;
+		-moz-transition: all .5s;
+		-o-transition: all .5s;
+		transition: all .5s;
+	}
+	nav a:hover {
+		background-color: red;
+		-webkit-transform: all .5s;
+		-moz-webkit-transform: all .5s;
+		-o-transform: all .5s;
+		transform: all .5s;
 
+	}
 </style>
 <!--[if lt IE 9]>
 <script src="html5shiv.js"></script>
