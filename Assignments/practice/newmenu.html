@@ -96,6 +96,46 @@
 .item:hover > .back1{
 	transform: perspective( 600px ) rotateY( 0deg );
 }
+
+.item > .front2{
+  background-color: #6C2D58;
+  text-align: center;
+  position:absolute;
+  top: 630px;
+  float:left;
+  font-size: 80pt;
+  height: 300px;
+  width: 225px;
+  display: table-cell;
+  vertical-align: middle;
+  color: white;
+	transform: perspective( 600px ) rotateY( 0deg );
+	backface-visibility: hidden;
+	transition: transform 1s linear 0s;
+}
+.item > .back2{
+  text-align: center;
+  position:absolute;
+  top: 630px;
+  height: 300px;
+  width: 225px;
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 20pt;
+  color: white;
+  background-color: #A0596B;
+
+	transform: perspective( 600px ) rotateY( 180deg );
+	backface-visibility: hidden;
+	transition: transform 1s linear 0s;
+}
+
+.item:hover > .front2{
+	transform: perspective( 600px ) rotateY( -180deg );
+}
+.item:hover > .back2{
+	transform: perspective( 600px ) rotateY( 0deg );
+}
 </style>
 </head>
 <body>
@@ -199,6 +239,57 @@
    <div class='smallwords'>chocolate</div>
   </div>
   <div class='back1' style='background-color: #6ccecb;'><div class='smallwords'> <br></div>Um... it's minty.</div>
+</div>
+<br>
+<div class='item'>
+  <div class='front2'><div class='smallwords'> <br></div>Mn<br>
+   <div class='smallwords'>mint</div>
+  </div>
+  <div class='back2'><div class='smallwords'> <br></div>Um... it's minty.</div>
+</div>
+
+<div class='item'>
+  <div class='front2' style='background-color: #fec343;'><div class='smallwords'> <br></div>Cd<br>
+   <div class='smallwords'>cookie dough</div>
+  </div>
+  <div class='back2' style='background-color: #f9d559;'><div class='smallwords'> <br></div>Um... it's minty.</div>
+</div>
+<div class='item'>
+  <div class='front2' style='background-color: #ef7351;'><div class='smallwords'> <br></div>Va<br>
+   <div class='smallwords'>vanilla</div>
+  </div>
+  <div class='back2' style='background-color: #f6b17f;'><div class='smallwords'> <br></div>Um... it's minty.</div>
+</div>
+<div class='item'>
+  <div class='front2' style='background-color: #218c8d;'><div class='smallwords'> <br></div>Ch<br>
+   <div class='smallwords'>chocolate</div>
+  </div>
+  <div class='back2' style='background-color: #6ccecb;'><div class='smallwords'> <br></div>Um... it's minty.</div>
+</div>
+
+<div class='item'>
+  <div class='front2'><div class='smallwords'> <br></div>Mn<br>
+   <div class='smallwords'>mint</div>
+  </div>
+  <div class='back2'><div class='smallwords'> <br></div>Um... it's minty.</div>
+</div>
+<div class='item'>
+  <div class='front2' style='background-color: #fec343;'><div class='smallwords'> <br></div>Cd<br>
+   <div class='smallwords'>cookie dough</div>
+  </div>
+  <div class='back2' style='background-color: #f9d559;'><div class='smallwords'> <br></div>Um... it's minty.</div>
+</div>
+<div class='item'>
+  <div class='front2' style='background-color: #ef7351;'><div class='smallwords'> <br></div>Va<br>
+   <div class='smallwords'>vanilla</div>
+  </div>
+  <div class='back2' style='background-color: #f6b17f;'><div class='smallwords'> <br></div>Um... it's minty.</div>
+</div>
+<div class='item'>
+  <div class='front2' style='background-color: #218c8d;'><div class='smallwords'> <br></div>Ch<br>
+   <div class='smallwords'>chocolate</div>
+  </div>
+  <div class='back2' style='background-color: #6ccecb;'><div class='smallwords'> <br></div>Um... it's minty.</div>
 </div>
 </body>
 </html>
