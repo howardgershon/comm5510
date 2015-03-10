@@ -54,7 +54,8 @@ body {
   background-color: #6C2D58;
   background-size: cover;
   background-repeat: no-repeat;
-  font-family: 'Homemade Apple', cursive;
+  /**font-family: 'Homemade Apple', cursive;**/
+  font-family: 'Open Sans', sans-serif;
   color: white;
   line-height: 2;
 }
