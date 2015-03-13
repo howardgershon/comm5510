@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  #spot {
+    height = 80%;
+    width = 100%;
+    background: #217C7E;
+    border:2px solid #000000;
+    border-radius: 0px;
+    position: absolute;
+    padding: 200px 400px;
+  }
+
+  body {
+    font-family: 'Courier New', sanserif;
+  }
+</style>
+
+<script>
+  function updateColor () {
+  var colorSpot = document.getElementById("spot");
+  var hex = document.getElementById("hex").value;
+
+  colorSpot.style.backgroundColor = hex;
+}
+</script>
+</head>
+<body>
+    hex: <input type='text' id = 'hex' value = '#217C7E' > </input>
+<button onclick = 'updateColor()'> Change Color </button> <br>
+<div id='spot'>  </div>
+
+</body>
+</html>
