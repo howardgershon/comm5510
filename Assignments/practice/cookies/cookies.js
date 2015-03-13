@@ -27,3 +27,5 @@ function checkCookie() {
         }
     }
 }
+
+//set cookie to trace where visitor goes in website
