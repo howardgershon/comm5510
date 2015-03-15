@@ -21,7 +21,7 @@ d3.json("../../d93.json", function(error, uk) {
   if (error) return console.error(error);
 
   svg.append("path")
-      .datum(topojson.feature(uk, districts093))
+      .datum(topojson.feature(uk, uk.objects.districts093))
       .attr("d", d3.geo.path().projection(d3.geo.mercator()));
 });
 
