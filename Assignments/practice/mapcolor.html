@@ -61,7 +61,7 @@ d3.select(self)
     .on("keydown", keydown)
     .node().focus();
 
-d3.json("./topojson/us.json", function(error, us) {
+d3.json("d93.json", function(error, us) {
   if (error) return console.error(error);
 
   var bisectId = d3.bisector(function(d) { return d.id; }).left;
