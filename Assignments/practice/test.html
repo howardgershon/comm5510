@@ -29,10 +29,10 @@ var svg = d3.select("body").append("svg")
     .attr("height", height);
 
 d3.json("../../d93.json", function(error, uk) {
-  svg.selectAll(".district093")
+  svg.selectAll(".interior")
       .data(topojson.feature(uk, uk.objects.district093).features)
     .enter().append("path")
-      .attr("class", function(d) { return "interior"; })
+      .attr("class", "interior")
       .attr("d", path);
 });
 
