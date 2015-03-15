@@ -5,6 +5,13 @@
 
 .interior { fill: #fff; }
 
+.boundary {
+  fill: none;
+  stroke: #777;
+  stroke-dasharray: 2,2;
+  stroke-linejoin: round;
+}
+
 </style>
 <body>
 <script src="http://d3js.org/d3.v3.min.js"></script>
@@ -35,5 +42,10 @@ d3.json("../../d93.json", function(error, uk) {
       .attr("class", "interior")
       .attr("d", path);
 });
+
+svg.append("path")
+    .datum(topojson.mesh(uk, uk.objects.districts093, function(a, b) { return a !== b;}))
+    .attr("d", path)
+    .attr("class", "boundary");
 
 </script>
