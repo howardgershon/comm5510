@@ -28,7 +28,7 @@ var svg = d3.select("body").append("svg")
     .attr("width", width)
     .attr("height", height);
 
-d3.json("d93.json", function(error, uk) {
+d3.json("../../d93.json", function(error, uk) {
   svg.selectAll(".district093")
       .data(topojson.feature(uk, uk.objects.district093).features)
     .enter().append("path")
