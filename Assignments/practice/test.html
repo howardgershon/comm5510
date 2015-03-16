@@ -42,6 +42,8 @@ var projection = d3.geo.conicConformal()
     .scale(1500)
     .translate([width / 2, height / 2]);
 
+var features = topojson.feature(uk, uk.objects.districts093).features;
+
 var path = d3.geo.path()
     .projection(projection);
 
@@ -51,16 +53,17 @@ var svg = d3.select("body").append("svg")
 
 d3.json("../../d93.json", function(error, uk) {
   svg.selectAll(".interior")
-      .data(topojson.feature(uk, uk.objects.districts093).features)
+      .data(features)
     .enter().append("path")
       .attr("class", "boundary")
       .attr("d", path);
 
    svg.append("path")
-       .datum(topojson.mesh(uk, uk.objects.districts093, function(a, b) { return a !== b;}))
+       .data(features)
        .attr("d", path)
        .attr("class", "boundary")
        .on('mouseover', function(d){d3.select(this).style('fill', '#eo4836');});
+
 
 });
 
