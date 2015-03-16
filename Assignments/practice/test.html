@@ -37,7 +37,7 @@ var svg = d3.select("body").append("svg")
 
 d3.json("../../d93.json", function(error, uk) {
   svg.selectAll(".interior")
-      .data(topojson.feature(uk, uk.objects.districts093))
+      .data(topojson.feature(uk, uk.objects.districts093).features)
     .enter().append("path")
       .attr("class", "boundary")
       .attr("d", path);
