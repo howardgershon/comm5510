@@ -59,7 +59,8 @@ d3.json("../../d93.json", function(error, uk) {
    svg.append("path")
        .datum(topojson.mesh(uk, uk.objects.districts093, function(a, b) { return a !== b;}))
        .attr("d", path)
-       .attr("class", "boundary");
+       .attr("class", "boundary")
+       .on('mouseover', function(d){d3.select(this).style('fill', '#eo4836');});
 
 });
 
