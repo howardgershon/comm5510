@@ -11,6 +11,12 @@
   stroke-width = 20;
 }
 
+path {
+  fill: none;
+  stroke: #777;
+  stroke-width = 20;
+}
+
 </style>
 <body>
 <script src="http://d3js.org/d3.v3.min.js"></script>
@@ -34,7 +40,7 @@ var svg = d3.select("body").append("svg")
     .attr("width", width)
     .attr("height", height);
 
-d3.json("../../d93.json", function(error, uk) {
+d3.json("../../cd93.json", function(error, uk) {
   svg.selectAll(".interior")
       .data(topojson.feature(uk, uk.objects.districts093).features)
     .enter().append("path")
