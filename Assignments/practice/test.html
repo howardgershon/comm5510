@@ -39,13 +39,13 @@ d3.json("../../d93.json", function(error, uk) {
   svg.selectAll(".interior")
       .data(topojson.feature(uk, uk.objects.districts093).features)
     .enter().append("path")
-      .attr("class", "interior")
+      .attr("class", "boundary")
       .attr("d", path);
 
-  svg.append("path")
-      .datum(topojson.mesh(uk, uk.objects.districts093, function(a, b) { return a !== b;}))
-      .attr("d", path)
-      .attr("class", "boundary");
+  // svg.append("path")
+  //     .datum(topojson.mesh(uk, uk.objects.districts093, function(a, b) { return a !== b;}))
+  //     .attr("d", path)
+  //     .attr("class", "boundary");
 
 });
 
