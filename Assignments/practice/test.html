@@ -51,7 +51,7 @@ var svg = d3.select("body").append("svg")
     .attr("width", width)
     .attr("height", height);
 
-d3.json("../../d93.json", function(error, uk) {
+d3.json("../../cd93.json", function(error, uk) {
   var features = topojson.feature(uk, uk.objects.districts093).features;
 
   svg.selectAll(".interior")
