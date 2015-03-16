@@ -66,7 +66,8 @@ d3.json("../../d93.json", function(error, uk) {
      .enter().append('path')
        .attr("d", path)
        .attr("class", "boundary")
-       .on('mouseover', function(d){this.style.fill = '#e04836';});
+       .on('mouseover', function(){this.style.fill = '#e04836';})
+       .on('mouseout', function(){this.style.fill = '#ccc';})
 
 
 });
