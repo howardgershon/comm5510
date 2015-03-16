@@ -28,7 +28,7 @@ var width = 960,
 
 //39.8282° N, 98.5795° W
 
-var projection = d3.geo.albers()
+var projection = d3.geo.conicConformal()
     .center([0, 39.8])
     .rotate([98.6, 0])
     .parallels([20, 50])
