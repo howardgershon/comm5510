@@ -5,6 +5,10 @@
 
 .interior { fill: #ccc; }
 
+svg {
+  border
+}
+
 .boundary {
   fill: #ccc;
   stroke: #777;
@@ -23,10 +27,13 @@ path {
 <script src="http://d3js.org/topojson.v1.min.js"></script>
 <script>
 
-var width = 960,
-    height = 1160;
+var width = 1160,
+    height = 960;
 
-//39.8282° N, 98.5795° W
+var border=1;
+var bordercolor='black';
+
+//center of the u.s. 39.8282° N, 98.5795° W
 
 var projection = d3.geo.conicConformal()
     .center([0, 39.8])
@@ -55,5 +62,14 @@ d3.json("../../d93.json", function(error, uk) {
        .attr("class", "boundary");
 
 });
+
+var borderPath = svg.append("rect")
+  .attr("x", 0)
+  .attr("y", 0)
+  .attr("height", height)
+  .attr("width", width)
+  .style("stroke", bordercolor)
+  .style("fill", "none")
+  .style("stroke-width", border);
 
 </script>
