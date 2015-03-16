@@ -5,6 +5,12 @@
 
 .interior { fill: #ccc; }
 
+#words {
+  position: absolute;
+  top: 0;
+  font-size: 20pt;
+}
+
 svg {
   border
 }
@@ -66,7 +72,7 @@ d3.json("../../cd93.json", function(error, uk) {
      .enter().append('path')
        .attr("d", path)
        .attr("class", "boundary")
-       .on('mouseover', function(d){this.style.fill = '#e04836'; console.log(d.properties.STATENAME + " " + d.properties.DISTRICT);})
+       .on('mouseover', function(d){this.style.fill = '#e04836'; document.getElementById('words').innerHTML = d.properties.STATENAME + " " + d.properties.DISTRICT;})
        .on('mouseout', function(){this.style.fill = '#ccc';})
 
 
@@ -83,4 +89,4 @@ var borderPath = svg.append("rect")
 
 </script>
 
-Hello World
+<div id='words'> </div>
