@@ -68,7 +68,7 @@ d3.json("../../cd93.json", function(error, uk) {
   svg.selectAll(".interior")
       .data(features)
     .enter().append("path")
-      .attr("class", "boundary")
+      .attr("class", "district")
       .attr("d", path);
 
    svg.append("g")
