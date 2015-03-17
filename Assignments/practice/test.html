@@ -79,7 +79,7 @@ d3.json("../../cd93.json", function(error, uk) {
        .on('mouseout', function(){this.style.fill = '#ccc'; document.getElementById('words').removeChild(document.getElementById('words').firstChild);})
 
    svg.insert("path", ".boundary")
-     .datum(topojson.mesh(uk, uk.objects.properties.STATENAME, function(a, b) { return a !== b; }))
+     .datum(topojson.mesh(uk, uk.objects.districts093.geometries.properties.STATENAME, function(a, b) { return a !== b; }))
      .attr("class", "boundary")
      .attr("d", path);
 
