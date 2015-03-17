@@ -26,7 +26,7 @@ svg {
 }
 
 .district {
-  fill: none;
+  fill: #ccc;
   stroke: #777;
   stroke-width: 1;
   z-index: 1;
@@ -65,7 +65,7 @@ var svg = d3.select("body").append("svg")
 d3.json("../../cd93.json", function(error, uk) {
   var features = topojson.feature(uk, uk.objects.districts093).features;
   console.log(uk.objects.districts093);
-  svg.selectAll(".interior")
+  svg.selectAll(".district")
       .data(features)
     .enter().append("path")
       .attr("class", "district")
