@@ -183,10 +183,10 @@
   	backface-visibility: hidden;
   	transition: transform 1s linear 0s;
   }
-  .item:hover > .front{
+  .item:focus > .front{
   	transform: perspective( 600px ) rotateY( -180deg );
   }
-  .item:hover > .back{
+  .item:focus > .back{
   	transform: perspective( 600px ) rotateY( 0deg );
   }
 
@@ -221,10 +221,10 @@
   	transition: transform 1s linear 0s;
   }
 
-  .item:hover > .front1{
+  .item:focus > .front1{
   	transform: perspective( 600px ) rotateY( -180deg );
   }
-  .item:hover > .back1{
+  .item:focus > .back1{
   	transform: perspective( 600px ) rotateY( 0deg );
   }
 
@@ -259,10 +259,10 @@
   	transition: transform 1s linear 0s;
   }
 
-  .item:hover > .front2{
+  .item:focus > .front2{
   	transform: perspective( 600px ) rotateY( -180deg );
   }
-  .item:hover > .back2{
+  .item:focus > .back2{
   	transform: perspective( 600px ) rotateY( 0deg );
   }
 }
