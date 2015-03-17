@@ -183,10 +183,10 @@
   	backface-visibility: hidden;
     -webkit-transition: transform 1s linear 0s;
   }
-  .item:focus > .front{
+  .item:active > .front{
     -webkit-transform: perspective( 600px ) rotateY( -180deg );
   }
-  .item:focus > .back{
+  .item:active > .back{
     -webkit-transform: perspective( 600px ) rotateY( 0deg );
   }
 
@@ -221,10 +221,10 @@
     -webkit-transition: transform 1s linear 0s;
   }
 
-  .item:focus > .front1{
+  .item:active > .front1{
   	transform: perspective( 600px ) rotateY( -180deg );
   }
-  .item:focus > .back1{
+  .item:active > .back1{
   	transform: perspective( 600px ) rotateY( 0deg );
   }
 
@@ -259,10 +259,10 @@
     -webkit-transition: transform 1s linear 0s;
   }
 
-  .item:focus > .front2{
+  .item:active > .front2{
   	-webkit-transform: perspective( 600px ) rotateY( -180deg );
   }
-  .item:focus > .back2{
+  .item:active > .back2{
     -webkit-transform: perspective( 600px ) rotateY( 0deg );
   }
 }
