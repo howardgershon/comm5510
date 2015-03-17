@@ -24,10 +24,10 @@ svg {
   stroke-width = 45;
 }
 
-path {
+.district {
   fill: none;
   stroke: #777;
-  stroke-width = 40;
+  stroke-width = 10;
 }
 
 </style>
@@ -74,7 +74,7 @@ d3.json("../../cd93.json", function(error, uk) {
        .data(features)
      .enter().append('path')
        .attr("d", path)
-       .attr("class", "boundary")
+       .attr("class", "district")
        .on('mouseover', function(d){this.style.fill = '#e04836'; document.getElementById('words').innerHTML = d.properties.STATENAME + " " + d.properties.DISTRICT;})
        .on('mouseout', function(){this.style.fill = '#ccc'; document.getElementById('words').removeChild(document.getElementById('words').firstChild);})
 
