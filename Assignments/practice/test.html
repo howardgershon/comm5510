@@ -78,6 +78,10 @@ d3.json("../../cd93.json", function(error, uk) {
        .on('mouseover', function(d){this.style.fill = '#e04836'; document.getElementById('words').innerHTML = d.properties.STATENAME + " " + d.properties.DISTRICT;})
        .on('mouseout', function(){this.style.fill = '#ccc'; document.getElementById('words').removeChild(document.getElementById('words').firstChild);})
 
+   svg.insert("path", ".graticule")
+     .datum(topojson.mesh(us, us.objects.states, function(a, b) { return a !== b; }))
+     .attr("class", "state-boundary")
+     .attr("d", path);
 
 });
 
