@@ -166,7 +166,7 @@
     color: white;
   	transform: perspective( 600px ) rotateY( 0deg );
   	backface-visibility: hidden;
-  	transition: transform 1s linear 0s;
+    -webkit-transition: transform 1s linear 0s;
   }
   .item > .back{
     text-align: center;
@@ -179,15 +179,15 @@
     color: white;
     background-color: #A0596B;
 
-  	transform: perspective( 600px ) rotateY( 180deg );
+    -webkit-transform: perspective( 600px ) rotateY( 180deg );
   	backface-visibility: hidden;
-  	transition: transform 1s linear 0s;
+    -webkit-transition: transform 1s linear 0s;
   }
   .item:focus > .front{
-  	transform: perspective( 600px ) rotateY( -180deg );
+    -webkit-transform: perspective( 600px ) rotateY( -180deg );
   }
   .item:focus > .back{
-  	transform: perspective( 600px ) rotateY( 0deg );
+    -webkit-transform: perspective( 600px ) rotateY( 0deg );
   }
 
   .item > .front1{
@@ -201,9 +201,9 @@
     display: table-cell;
     vertical-align: middle;
     color: white;
-  	transform: perspective( 600px ) rotateY( 0deg );
+    -webkit-transform: perspective( 600px ) rotateY( 0deg );
   	backface-visibility: hidden;
-  	transition: transform 1s linear 0s;
+    -webkit-transition: transform 1s linear 0s;
   }
   .item > .back1{
     text-align: center;
@@ -216,9 +216,9 @@
     color: white;
     background-color: #A0596B;
 
-  	transform: perspective( 600px ) rotateY( 180deg );
+    -webkit-transform: perspective( 600px ) rotateY( 180deg );
   	backface-visibility: hidden;
-  	transition: transform 1s linear 0s;
+    -webkit-transition: transform 1s linear 0s;
   }
 
   .item:focus > .front1{
@@ -239,9 +239,9 @@
     display: table-cell;
     vertical-align: middle;
     color: white;
-  	transform: perspective( 600px ) rotateY( 0deg );
+    -webkit-transform: perspective( 600px ) rotateY( 0deg );
   	backface-visibility: hidden;
-  	transition: transform 1s linear 0s;
+    -webkit-transition: transform 1s linear 0s;
   }
   .item > .back2{
     text-align: center;
@@ -254,16 +254,16 @@
     color: white;
     background-color: #A0596B;
 
-  	transform: perspective( 600px ) rotateY( 180deg );
+    -webkit-transform: perspective( 600px ) rotateY( 180deg );
   	backface-visibility: hidden;
-  	transition: transform 1s linear 0s;
+    -webkit-transition: transform 1s linear 0s;
   }
 
   .item:focus > .front2{
-  	transform: perspective( 600px ) rotateY( -180deg );
+  	-webkit-transform: perspective( 600px ) rotateY( -180deg );
   }
   .item:focus > .back2{
-  	transform: perspective( 600px ) rotateY( 0deg );
+    -webkit-transform: perspective( 600px ) rotateY( 0deg );
   }
 }
 </style>
