@@ -82,14 +82,14 @@ d3.json("../../cd93.json", function(error, uk) {
 
 });
 
-// d3.json("./topojson/us.json", function(error, us){
-//
-//   svg.insert("path", ".boundary")
-//     .datum(topojson.mesh(us, us.objects.states, function(a, b) { return a !== b; }))
-//     .attr("class", "boundary")
-//     .attr("d", path);
-//
-// })
+d3.json("./topojson/us.json", function(error, us){
+
+  svg.insert("path", ".boundary")
+    .datum(topojson.mesh(us, us.objects.states, function(a, b) { return a !== b; }))
+    .attr("class", "boundary")
+    .attr("d", path);
+
+})
 
 var borderPath = svg.append("rect")
   .attr("x", 0)
