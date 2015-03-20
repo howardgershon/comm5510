@@ -82,6 +82,17 @@ text-decoration: none;
 color: #dedede;
 }
 
+/*Retina Screens Code*/
+@media only screen and (min-resolution: 200dpi), (min-width:1024px) {
+
+  p{
+	   font-size: 120%;
+	   line-height: 1.4;
+	   margin-bottom: 2em;
+  }
+
+}
+
 @media only screen and (max-width:1024px) {
 
 p{
