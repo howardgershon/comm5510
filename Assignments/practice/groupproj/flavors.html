@@ -29,7 +29,7 @@
   <div class='topstuff'>Flavors</div>
   <div id='flav1' ontouchstart=''>
     Boom Chocolotta
-    <div id='mask1' ontouchstart=''>
+    <div id='mask1' ontouchstart='this.addEventListener("webkitTransitionEnd", function(e) {this.style.webkitTransition = "";});'>
       <p>description</p>
     </div>
   </div>
