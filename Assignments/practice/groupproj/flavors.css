@@ -42,7 +42,7 @@ p {
 }
 
 #flav1:hover #mask1{
-  -webkit-transform: translateX(0%);
+  -webkit-transform: translateX(0%) !important;
   color: black;
   opacity: .8;
 }
