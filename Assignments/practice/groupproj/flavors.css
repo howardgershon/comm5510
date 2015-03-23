@@ -230,3 +230,32 @@ p {
 #flav6:hover {
   color: transparent;
 }
+
+
+/** responsive stuffs **/
+
+/*Retina Screens Code*/
+@media only screen and (min-resolution: 200dpi), (min-width:1024px) {
+
+}
+
+@media only screen and (max-width:1024px) {
+
+}
+
+@media only screen and (max-width:800px) {
+
+}
+
+/** cell devices **/
+@media only screen and (max-width:420px) {
+  #flav1:active .mask{
+    -webkit-transform: translateX(0%);
+    color: black;
+    opacity: .8;
+  }
+
+  #flav1:active {
+    color: transparent;
+  }
+}
