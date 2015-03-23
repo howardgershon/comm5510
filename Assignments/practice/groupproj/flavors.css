@@ -245,28 +245,13 @@ p {
 
 @media only screen and (max-width:800px) {
 
+  #flav1 #flav2 #flav3 #flav4 #flav5 #flav6 {
+    font-size = .5em;
+  }
+
 }
 
 /** cell devices **/
 @media only screen and (max-width:420px) {
 
-  #flav1:checked {
-    color: transparent;
-  }
-
-  #flav1:checked .mask{
-    -webkit-transform: translateX(0%);
-    color: black;
-    opacity: .8;
-  }
-
-  /*#flav1:not(:checked) .mask{
-    -webkit-transform: translateX(-110%);
-    color: black;
-    opacity: .8;
-  }*/
-
-  #flav1::not(:checked) {
-    color: white;
-  }
 }
