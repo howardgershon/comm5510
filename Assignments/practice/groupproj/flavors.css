@@ -47,6 +47,10 @@ p {
   opacity: .8;
 }
 
+.unhover ~ #mask1{
+  -webkit-transform: translateX(-110%);
+}
+
 #flav1:hover {
   color: transparent;
 }
