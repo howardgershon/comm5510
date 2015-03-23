@@ -1,5 +1,5 @@
 body {
-  background-color: #d9b499;
+  background-color: #d9b499 !important;
 }
 
 #flav1 {
@@ -16,7 +16,7 @@ body {
 
 p {
   opacity: 1;
-  font-size: .4em;
+  font-size: .4em !important;
 }
 
 #flav1 > .mask {
