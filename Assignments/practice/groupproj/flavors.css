@@ -27,7 +27,7 @@ p {
   font-size: .4em !important;
 }
 
-#flav1 > #mask1 {
+#mask1 {
   position: absolute;
   top: 0;
   height: 180px;
