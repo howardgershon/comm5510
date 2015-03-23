@@ -254,28 +254,8 @@ p {
     color: transparent;
   }
 
-  #flav1 > .mask:before, #flav1 > .mask:after {
-    position: absolute;
-    top: 0;
-    height: 180px;
-    width: 100%;
-    opacity: .7;
-    text-align: center;
-    padding: 20px 0 0 0;
-    background-color: #ccc;
-    -webkit-transition: all 0.5s linear;
-    -webkit-transform: translateX(-110%);
-    font-size: 1em;
-  }
-
-  #flav1:focus .mask:before{
+  #flav1:focus .mask{
     -webkit-transform: translateX(0%);
-    color: black;
-    opacity: .8;
-  }
-
-  #flav1:focus .mask:after{
-    -webkit-transform: translateX(-110%);
     color: black;
     opacity: .8;
   }
