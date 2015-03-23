@@ -13,8 +13,7 @@ body {
 #flav1 {
   position: absolute;
   top: 135px;
-  /**font-family: 'Open Sans', sans-serif;**/
-  font-family: 'Lobster', cursive;
+  font-family: 'Open Sans', sans-serif;
   height: 200px;
   width: 100%;
   background-image: url('./images/icecream1.jpg');
@@ -55,8 +54,7 @@ p {
 #flav2 {
   position: absolute;
   top: 345px;
-  /**font-family: 'Open Sans', sans-serif;**/
-  font-family: 'Lobster', cursive;
+  font-family: 'Open Sans', sans-serif;
   height: 200px;
   width: 100%;
   background-image: url('./images/icecream9.JPG');
@@ -92,8 +90,7 @@ p {
 #flav3 {
   position: absolute;
   top: 555px;
-  /**font-family: 'Open Sans', sans-serif;**/
-  font-family: 'Lobster', cursive;
+  font-family: 'Open Sans', sans-serif;
   height: 200px;
   width: 100%;
   background-image: url('./images/icecream8.jpg');
@@ -129,8 +126,7 @@ p {
 #flav4 {
   position: absolute;
   top: 765px;
-  /**font-family: 'Open Sans', sans-serif;**/
-  font-family: 'Lobster', cursive;
+  font-family: 'Open Sans', sans-serif;
   height: 200px;
   width: 100%;
   background-image: url('./images/icecream4.jpg');
@@ -166,8 +162,7 @@ p {
 #flav5 {
   position: absolute;
   top: 975px;
-  /**font-family: 'Open Sans', sans-serif;**/
-  font-family: 'Lobster', cursive;
+  font-family: 'Open Sans', sans-serif;
   height: 200px;
   width: 100%;
   background-image: url('./images/icecream5.jpg');
@@ -203,8 +198,7 @@ p {
 #flav6 {
   position: absolute;
   top: 1185px;
-  /**font-family: 'Open Sans', sans-serif;**/
-  font-family: 'Lobster', cursive;
+  font-family: 'Open Sans', sans-serif;
   height: 200px;
   width: 100%;
   background-image: url('./images/icecream7.jpg');
