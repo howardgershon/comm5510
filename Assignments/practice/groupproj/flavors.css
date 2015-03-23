@@ -249,13 +249,18 @@ p {
 
 /** cell devices **/
 @media only screen and (max-width:420px) {
-  #flav1:active .mask{
+
+  #flav5:focus {
+    color: transparent;
+  }
+
+  #flav1:focus .mask{
     -webkit-transform: translateX(0%);
     color: black;
     opacity: .8;
   }
 
-  #flav1:active {
+  #flav1:focus {
     color: transparent;
   }
 }
