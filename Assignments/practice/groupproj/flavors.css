@@ -260,6 +260,14 @@ p {
     font-size: 40px;
   }
 
+  #flav1:active .mask{
+    -webkit-transform: translateX(0%);
+    color: black;
+    opacity: .8;
+  }
 
+  #flav1:active {
+    color: transparent;
+  }
 
 }
