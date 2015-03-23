@@ -27,9 +27,9 @@
     </div>
   </nav>
   <div class='topstuff'>Flavors</div>
-  <div id='flav1' ontouchstart='document.getElementByClassName("mask").style.webkitTransform = "translateX(0%)"; this.style.color = "transparent"'>
+  <div id='flav1' ontouchstart='document.getElementById("mask1").style.webkitTransform = "translateX(0%)"; this.style.color = "transparent"'>
     Boom Chocolotta
-    <div id='mask1' ontouchstart=''>
+    <div id='mask1' onclick='document.getElementById("flav1").classList.toggle("hover");'>
       <p>description</p>
     </div>
   </div>
