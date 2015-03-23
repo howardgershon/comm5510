@@ -1,6 +1,12 @@
 body {
   background-image: none !important;
-  font-size: 40px !important;
+}
+
+.topstuff {
+  font-size: 40px;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  text-align: center;
 }
 
 #flav1 {
