@@ -243,7 +243,7 @@ p {
 
 }
 
-@media only screen and (max-width:800px) {
+@media only screen and (max-width:800pt) {
 
   #flav1 #flav2 #flav3 #flav4 #flav5 #flav6 {
     font-size = 20px;
