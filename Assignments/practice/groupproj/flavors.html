@@ -13,7 +13,7 @@
   <title>Template</title>
 </head>
 
-<body ontouchstart=''>
+<body>
   <nav class="fixed">
     <div id="navbar">
       <ul id="navlist">
@@ -27,7 +27,7 @@
     </div>
   </nav>
   <div class='topstuff'>Flavors</div>
-  <div id='flav1'>
+  <div id='flav1' ontouchstart='this.classList.toggle("hover");'>
     Boom Chocolotta
     <div class='mask' ontouchstart='this.style.webkitTransform = "translateX(-110%)"; document.getElementById("flav1").style.color= "white";'>
       <p>description</p>
