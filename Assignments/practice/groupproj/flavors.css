@@ -42,6 +42,7 @@ p {
 }
 
 #flav1:hover .mask{
+  -webkit-transition: all 0.5s linear;
   -webkit-transform: translateX(0%);
   color: black;
   opacity: .8;
