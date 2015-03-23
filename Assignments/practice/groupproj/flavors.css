@@ -1,0 +1,224 @@
+body {
+  background-color: #d9b499;
+}
+
+#flav1 {
+  position: absolute;
+  top: 5px;
+  font-family: 'Open Sans', sans-serif;
+  height: 200px;
+  width: 100%;
+  background-image: url('./images/icecream1.jpg');
+  background-position: right 50%;
+  font-size: 5em;
+  color: white;
+}
+
+p {
+  opacity: 1;
+  font-size: .4em;
+}
+
+#flav1 > .mask {
+  position: absolute;
+  top: 0;
+  height: 180px;
+  width: 100%;
+  opacity: .7;
+  text-align: center;
+  padding: 20px 0 0 0;
+  background-color: #ccc;
+  -webkit-transition: all 0.5s linear;
+  -webkit-transform: translateX(-100%);
+  font-size: 1em;
+}
+
+#flav1:hover .mask{
+  -webkit-transform: translateX(0%);
+  color: black;
+  opacity: .8;
+}
+
+#flav1:hover {
+  color: transparent;
+}
+
+#flav2 {
+  position: absolute;
+  top: 215px;
+  font-family: 'Open Sans', sans-serif;
+  height: 200px;
+  width: 100%;
+  background-image: url('./images/icecream2.jpg');
+  background-position: right 50%;
+  font-size: 5em;
+  color: white;
+}
+
+#flav2 > .mask {
+  position: absolute;
+  top: 0;
+  height: 180px;
+  width: 100%;
+  opacity: .7;
+  text-align: center;
+  padding: 20px 0 0 0;
+  background-color: #ccc;
+  -webkit-transition: all 0.5s linear;
+  -webkit-transform: translateX(-100%);
+  font-size: 1em;
+}
+
+#flav2:hover .mask{
+  -webkit-transform: translateX(0%);
+  color: black;
+  opacity: .8;
+}
+
+#flav2:hover {
+  color: transparent;
+}
+
+#flav3 {
+  position: absolute;
+  top: 425px;
+  font-family: 'Open Sans', sans-serif;
+  height: 200px;
+  width: 100%;
+  background-image: url('./images/icecream8.jpg');
+  background-position: 90% 50%;
+  font-size: 5em;
+  color: white;
+}
+
+#flav3 > .mask {
+  position: absolute;
+  top: 0;
+  height: 180px;
+  width: 100%;
+  opacity: .7;
+  text-align: center;
+  padding: 20px 0 0 0;
+  background-color: #ccc;
+  -webkit-transition: all 0.5s linear;
+  -webkit-transform: translateX(-100%);
+  font-size: 1em;
+}
+
+#flav3:hover .mask{
+  -webkit-transform: translateX(0%);
+  color: black;
+  opacity: .8;
+}
+
+#flav3:hover {
+  color: transparent;
+}
+
+#flav4 {
+  position: absolute;
+  top: 635px;
+  font-family: 'Open Sans', sans-serif;
+  height: 200px;
+  width: 100%;
+  background-image: url('./images/icecream4.jpg');
+  background-position: right 50%;
+  font-size: 5em;
+  color: white;
+}
+
+#flav4 > .mask {
+  position: absolute;
+  top: 0;
+  height: 180px;
+  width: 100%;
+  opacity: .7;
+  text-align: center;
+  padding: 20px 0 0 0;
+  background-color: #ccc;
+  -webkit-transition: all 0.5s linear;
+  -webkit-transform: translateX(-100%);
+  font-size: 1em;
+}
+
+#flav4:hover .mask{
+  -webkit-transform: translateX(0%);
+  color: black;
+  opacity: .8;
+}
+
+#flav4:hover {
+  color: transparent;
+}
+
+#flav5 {
+  position: absolute;
+  top: 845px;
+  font-family: 'Open Sans', sans-serif;
+  height: 200px;
+  width: 100%;
+  background-image: url('./images/icecream5.jpg');
+  background-position: right 50%;
+  font-size: 5em;
+  color: white;
+}
+
+#flav5 > .mask {
+  position: absolute;
+  top: 0;
+  height: 180px;
+  width: 100%;
+  opacity: .7;
+  text-align: center;
+  padding: 20px 0 0 0;
+  background-color: #ccc;
+  -webkit-transition: all 0.5s linear;
+  -webkit-transform: translateX(-100%);
+  font-size: 1em;
+}
+
+#flav5:hover .mask{
+  -webkit-transform: translateX(0%);
+  color: black;
+  opacity: .8;
+}
+
+#flav5:hover {
+  color: transparent;
+}
+
+#flav6 {
+  position: absolute;
+  top: 1055px;
+  font-family: 'Open Sans', sans-serif;
+  height: 200px;
+  width: 100%;
+  background-image: url('./images/icecream7.jpg');
+  background-position: right 50%;
+  font-size: 5em;
+  color: white;
+}
+
+#flav6 > .mask {
+  position: absolute;
+  top: 0;
+  height: 180px;
+  width: 100%;
+  opacity: .7;
+  text-align: center;
+  padding: 20px 0 0 0;
+  background-color: #ccc;
+  -webkit-transition: all 0.5s linear;
+  -webkit-transform: translateX(-100%);
+  font-size: 1em;
+}
+
+#flav6:hover .mask{
+  -webkit-transform: translateX(0%);
+  color: black;
+  opacity: .8;
+}
+
+#flav6:hover {
+  color: transparent;
+}
