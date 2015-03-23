@@ -249,7 +249,7 @@ p {
     and (orientation : portrait)
     and (-webkit-min-device-pixel-ratio : 3) {
 
-  #flav1, #flav2, #flav3, #flav4, #flav5, #flav6 {
+  #flav1 {
     font-size = 20px;
   }
 
