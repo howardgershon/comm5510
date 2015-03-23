@@ -260,11 +260,11 @@ p {
     opacity: .8;
   }
 
-  #flav1:not(:checked) .mask{
+  /*#flav1:not(:checked) .mask{
     -webkit-transform: translateX(-110%);
     color: black;
     opacity: .8;
-  }
+  }*/
 
   #flav1::not(:checked) {
     color: white;
