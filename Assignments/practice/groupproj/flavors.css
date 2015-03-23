@@ -47,10 +47,6 @@ p {
   opacity: .8;
 }
 
-.mask:hover{
-  -webkit-transform: translateX(-110%);
-}
-
 #flav1:hover {
   color: transparent;
 }
@@ -263,5 +259,7 @@ p {
   #flav1, #flav2, #flav3, #flav4, #flav5, #flav6 {
     font-size: 40px;
   }
+
+
 
 }
