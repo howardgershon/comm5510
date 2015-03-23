@@ -250,17 +250,17 @@ p {
 /** cell devices **/
 @media only screen and (max-width:420px) {
 
-  #flav5:focus {
+  #flav5:checked {
     color: transparent;
   }
 
-  #flav1:focus .mask{
+  #flav1:checked .mask{
     -webkit-transform: translateX(0%);
     color: black;
     opacity: .8;
   }
 
-  #flav1:focus {
+  #flav1: {
     color: transparent;
   }
 }
