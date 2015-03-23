@@ -243,7 +243,11 @@ p {
 
 }
 
-@media only screen and (max-width:1300pt) {
+@media only screen
+    and (min-device-width : 414px)
+    and (max-device-width : 736px)
+    and (orientation : portrait)
+    and (-webkit-min-device-pixel-ratio : 3) {
 
   #flav1, #flav2, #flav3, #flav4, #flav5, #flav6 {
     font-size = 20px;
