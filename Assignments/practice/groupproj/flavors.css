@@ -13,6 +13,7 @@ body {
   position: absolute;
   top: 135px;
   text-align: center;
+  vertical-align: middle;
   font-family: 'Open Sans', sans-serif;
   height: 200px;
   width: 100%;
