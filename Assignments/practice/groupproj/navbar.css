@@ -182,7 +182,7 @@ footer {
   margin-bottom: 10px;
 }
 .answer{
-  line-height: .5;
+  line-height: 1 !important;
   width: 70%;
   word-wrap: break-word;
   font-size: .5em;
