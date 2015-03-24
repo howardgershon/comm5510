@@ -184,6 +184,7 @@ footer {
 .answer{
   line-height: .5;
   width: 40%;
+  word-wrap: break-word;
   font-size: .5em;
   margin-left: 50px;
   margin-right: 50px;
