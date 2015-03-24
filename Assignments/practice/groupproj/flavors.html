@@ -4,6 +4,7 @@
 <head>
   <link rel='stylesheet' href='flavors.css' type='text/css'>
   <link rel='stylesheet' href='navbar.css' type='text/css'>
+  <link rel='stylesheet' href='icons.css' type='text/css'>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
@@ -17,11 +18,18 @@
   <nav class="fixed">
     <div id="navbar">
       <ul id="navlist">
-        <li id="active"><a href="./">About</a>
+        <!-- Code for the logo.
+<a href="#" class="logo"><img src="crab.png"></a>-->
+        <li id="active"><a href="./"><span class="icon-home">
+</span>Home</a>
         </li>
-        <li><a href="./flavors.html" id="current">Ice Cream</a>
+        <li><a href="./about.html"><span class="icon-file-text"></span>&nbsp;About</a>
         </li>
-        <li><a href="./faq.html">FAQ</a>
+        <li><a href="./flavors.html" id="current"><span class="icon-icecream"></span>Flavors</a>
+        </li>
+        <li><a href="./faq.html"><span class="icon-question2"></span>&nbsp;FAQ</a>
+        </li>
+        <li><a href="./contact.html"><span class="icon-bubble"></span><span class="margin"></span>&nbsp; Contact</a>
         </li>
       </ul>
     </div>
