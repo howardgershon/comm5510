@@ -10,6 +10,11 @@ body {
   text-align: center;
 }
 
+.content {
+  position: absolute;
+  top: 50%;
+}
+
 #flav1 {
   position: absolute;
   top: 135px;
