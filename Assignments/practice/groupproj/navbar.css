@@ -171,6 +171,7 @@ footer {
   font-size: 2em;
   width: 100%;
   height: 50px;
+  padding: 10px;
   background-color: #d9b499;
   border-radius: 5px;
   line-height: 50px;
@@ -179,6 +180,10 @@ footer {
 }
 .answer{
   font-size: 1em;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px; 
 }
 
 .topstuff {
