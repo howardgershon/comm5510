@@ -264,3 +264,9 @@ footer {
     z-index: 5000;
     margin-left: 0 !important;
 }
+
+iframe{
+  width: 600px;
+  height: 450px; 
+  border:0;
+}
