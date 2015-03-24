@@ -168,11 +168,13 @@ footer {
 }
 
 .question {
-  font-size: 1em;
+  font-size: 2em;
   width: 60%;
   height: 50px;
   background-color: #d9b499;
   border-radius: 5px;
+  line-height: 50px;
+  font-family: 'Open Sans', sans-serif;
 }
 .answer{
   font-size: 1em;
