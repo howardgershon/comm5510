@@ -9,6 +9,11 @@ body {
   text-align: center;
 }
 
+#flav1, #flav2, #flav3, #flav4, #flav5, #flav6 {
+  line-height: 200px;
+  text-align: center;
+}
+
 #flav1 {
   position: absolute;
   top: 135px;
