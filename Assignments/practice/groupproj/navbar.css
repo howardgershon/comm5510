@@ -161,14 +161,15 @@ footer {
     line-height: 8px;
     font-size: 24px;
   }
-  .question {
-
-  }
-  .answer{
-
-  }
 }
 
 #q1, #q2, #q3, #q4, #q5, #q6, #q7 {
   display: none;
+}
+
+.question {
+  font-size: 1em;
+}
+.answer{
+  font-size: 1em;
 }
