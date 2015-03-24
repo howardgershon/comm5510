@@ -217,6 +217,9 @@ footer {
   .logo{
     visibility: hidden;
   }
+  iframe{
+    width: 300px;
+  }
 }
 
 #q1, #q2, #q3, #q4, #q5, #q6, #q7 {
