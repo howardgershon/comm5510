@@ -256,4 +256,5 @@ footer {
     top: 50px;
     float: left;
     z-index: 5000;
+    margin-left: 0 !important;
 }
