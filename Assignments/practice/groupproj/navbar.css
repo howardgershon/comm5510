@@ -177,10 +177,13 @@ footer {
   line-height: 50px;
   font-family: 'Open Sans', sans-serif;
   opacity: 1;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .answer{
-  font-size: 1em;
+  font-size: .2em;
   margin-left: auto;
   margin-right: auto;
   margin-top: 10px;
