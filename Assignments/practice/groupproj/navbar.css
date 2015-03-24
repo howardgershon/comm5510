@@ -169,7 +169,18 @@ footer {
 
 .question {
   font-size: 1em;
+  width: 60%;
+  height: 100px;
+  background-color: #d9b499;
+  border-radius: 5px;
 }
 .answer{
   font-size: 1em;
+}
+
+.topstuff {
+  font-size: 50px;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  text-align: center;
 }
