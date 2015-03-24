@@ -253,9 +253,9 @@ footer {
 
 .logo {
     position: absolute;
-    top: 60px;
-    left: 20px;
-    width: 10%;
+    top: 15%;
+    left: 5%;
+    width: 5%;
     float: left;
     z-index: 5000;
     margin-left: 0 !important;
