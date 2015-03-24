@@ -180,6 +180,9 @@ footer {
   .logo{
     visibility: hidden;
   }
+  iframe{
+    max-width:450px;
+  }
 }
 @media only screen and (max-width: 420px) {
   .image {
@@ -218,7 +221,7 @@ footer {
     visibility: hidden;
   }
   iframe{
-    max-width: 300px;
+    max-width: 350px;
   }
 }
 
