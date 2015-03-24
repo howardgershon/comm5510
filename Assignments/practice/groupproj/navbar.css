@@ -169,12 +169,13 @@ footer {
 
 .question {
   font-size: 2em;
-  width: 60%;
+  width: 100%;
   height: 50px;
   background-color: #d9b499;
   border-radius: 5px;
   line-height: 50px;
   font-family: 'Open Sans', sans-serif;
+  opacity: 1;
 }
 .answer{
   font-size: 1em;
