@@ -210,6 +210,9 @@ footer {
     line-height: 8px;
     font-size: 24px;
   }
+  .logo{
+    visibility: hidden;
+  }
 }
 
 #q1, #q2, #q3, #q4, #q5, #q6, #q7 {
@@ -251,4 +254,6 @@ footer {
 .logo {
     position: absolute;
     top: 50px;
+    float: left;
+    z-index: 5000;
 }
