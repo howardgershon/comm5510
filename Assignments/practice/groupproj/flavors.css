@@ -270,4 +270,8 @@ p {
    padding-top: 65px !important;
  }
 
+ iframe {
+   width: 400px;
+ }
+
 }
