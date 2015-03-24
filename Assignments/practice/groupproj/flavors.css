@@ -242,6 +242,7 @@ p {
   #flav1, #flav2, #flav3, #flav4, #flav5, #flav6 {
     /*font-size: 120%;*/
     line-height: 1.4;
+    font-size: 80px;
   }
 }
 
