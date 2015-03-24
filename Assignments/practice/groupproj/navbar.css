@@ -183,8 +183,8 @@ footer {
 }
 .answer{
   font-size: .5em;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 50px;
+  margin-right: 50px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
