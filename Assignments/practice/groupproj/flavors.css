@@ -240,7 +240,7 @@ p {
 /*Retina Screens Code*/
 @media only screen and (min-resolution: 200dpi), (min-width:1400px) {
   #flav1, #flav2, #flav3, #flav4, #flav5, #flav6 {
-    font-size: 120%;
+    /*font-size: 120%;*/
     line-height: 1.4;
   }
 }
