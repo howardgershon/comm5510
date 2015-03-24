@@ -176,6 +176,10 @@ footer {
   #navbar ul {
     font-size: 12px;
   }
+
+  .logo{
+    visibility: hidden;
+  }
 }
 @media only screen and (max-width: 420px) {
   .image {
