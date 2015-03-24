@@ -1,28 +1,36 @@
 body {
- background: url("icecream.jpg") no-repeat center center fixed;
- background-color: #d9b499;
- -webkit-background-size: cover;
- -moz-background-size: cover;
- -o-background-size: cover;
- background-size: cover;
- background-repeat: no-repeat;
- padding-top: 50px;
- padding-bottom: 25px;
+  background: url("icecream.jpg") no-repeat center center fixed;
+  background-color: #d9b499;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 50px;
+  padding-bottom: 25px;
 }
-
-p{
- font-family: 'Ubuntu';
- color: #3e1613;
- font-size: 1.0em;
- margin-left: 10px;
- margin-right: 10px;
+p {
+  font-family: 'Open Sans', sans-serif;
+  color: #3e1613;
+  font-size: 1.0em;
+  margin-left: 10px;
+  margin-right: 10px;
 }
-
-#wrapper{
-    width:80%;
-    margin:0px auto;
+#wrapper {
+  width: 80%;
+  margin: 0px auto;
 }
-
+.logo {
+  float: left;
+}
+footer {
+  text-align: center;
+  padding: 15px;
+  margin: 10px auto;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  font-size: 85%;
+}
 .fixed {
   position: fixed;
   top: 0;
@@ -31,137 +39,126 @@ p{
   width: 100%;
   #height: 50px;
 }
-
 .content {
   border-radius: 25px;
   background-color: white;
   opacity: 0.85;
   padding: 20px
 }
-
-#navbar ul
-{
-text-align: center;
-padding-bottom: 15px;
-padding-top: 15px;
-padding-left: 0px;
-margin-top: 0;
-margin-left: 0;
-/*Transparency value here*/
-background: rgba(140, 99, 81,0.90);
-background-color: ;
-zcolor: white;
-#width: 100%;
-font-family: Ubuntu;
-line-height: 18px;
-font-size: 16px;
+.margin {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: 3px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 3px;
 }
-
-#navbar ul li
-{
-display: inline;
-padding-left: 0;
-padding-right: 0;
-padding-bottom: 5px;
-/* matches link padding except for left and right */
-padding-top: 5px;
+#navbar ul {
+  text-align: center;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  padding-left: 0px;
+  margin-top: 0;
+  margin-left: 0;
+  /*Transparency value here*/
+  background: rgba(140, 99, 81, 0.90);
+  background-color: ;
+  zcolor: white;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 18px;
+  font-size: 16px;
 }
-
-#navbar ul li a
-{
-padding-left: 5px;
-padding-right: 5px;
-padding-bottom: 5px;
-padding-top: 5px;
-color: white;
-text-decoration: none;
+#navbar ul li {
+  display: inline;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 5px;
+  /* matches link padding except for left and right */
+  padding-top: 5px;
 }
-
-#navbar ul li a:hover
-{
-color: #dedede;
+#navbar ul li a {
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  color: white;
+  text-decoration: none;
 }
-
+#navbar ul li a: hover {
+  color: #dedede;
+}
 /*Retina Screens Code*/
-@media only screen and (min-resolution: 200dpi), (min-width:1024px) {
 
-  p{
-	   font-size: 120%;
-	   line-height: 1.4;
-	   margin-bottom: 2em;
+@media only screen and (min-resolution: 200dpi), (min-width: 1024px) {
+  p {
+    font-size: 120%;
+    line-height: 1.4;
+    margin-bottom: 2em;
   }
-
 }
-
-@media only screen and (max-width:1024px) {
-
-p{
-    font-size:0.9em;
+@media only screen and (max-width: 1024px) {
+  p {
+    font-size: 105%;
     line-height: 1.2;
     margin-bottom: 1em;
+  }
+  .image {
+    width: 50%;
+  }
+  #navbar ul {
+    font-size: 18px;
+  }
 }
-.image{
-	width: 50%;
-	}
-#navbar ul
-{
-font-size: 18px;
-}
-
-}
-
-@media only screen and (max-width:800px) {
-	.image{
-	width: 40%;
-	}
-    p{
-	font-size:.9em;
-	line-height: 1.4;
-	margin-bottom: 2em;
-}
-    #wrapper{
-    width:95%;
+@media only screen and (max-width: 800px) {
+  .image {
+    width: 40%;
+  }
+  p {
+    font-size: 105%;
+    line-height: 1.4;
+    margin-bottom: 2em;
+  }
+  #wrapper {
+    width: 95%;
     margin: 0px auto;
+  }
+  #navbar ul {
+    font-size: 18px;
+  }
 }
-
-#navbar ul
-{
-font-size: 18px;
-}
-}
-
-@media only screen and (max-width:420px) {
-    .image {
+@media only screen and (max-width: 420px) {
+  .image {
     float: none;
     width: 60%;
-    }
-
-   #wrapper{
-    width:100%;
+  }
+  #wrapper {
+    width: 100%;
     margin: 0px auto;
-}
-p{
-	font-size:.9em;
-	line-height: 1.5;
-	margin-bottom: 2em;
-}
- .content {
-  border: none;
-  background-color: rgba(255, 255, 255,0);
-  opacity: 0.85;
-}
-body {
- background-image: url("");
- padding-top: 15px;
- padding-bottom: 0px;
-}
-
-#navbar ul
-{
-/*Transparency value here*/
-background: rgba(140, 99, 81,1.00);
-line-height: 8px;
-font-size: 24px;
-}
-
+  }
+  p {
+    font-size: 105%;
+    line-height: 1.5;
+    margin-bottom: 2em;
+  }
+  .content {
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    opacity: 0.85;
+  }
+  .margin {
+    padding: 10px;
+  }
+  body {
+    background-image: url("");
+    padding-top: 75px;
+    padding-bottom: 0px;
+  }
+  #navbar ul {
+    /*Transparency value here*/
+    background: rgba(140, 99, 81, 1.00);
+    line-height: 8px;
+    font-size: 24px;
+  }
 }
