@@ -185,6 +185,10 @@ footer {
   line-height: 1 !important;
   word-break:break-all;
   font-size: .5em;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .topstuff {
