@@ -256,4 +256,13 @@ p {
     font-size: 40px;
   }
 
+ .topstuff{
+   font-size: 30px;
+   padding: 0;
+ }
+
+ body {
+   padding: 0 !important;
+ }
+
 }
