@@ -212,7 +212,7 @@ footer {
     /*Transparency value here*/
     background: rgba(140, 99, 81, 1.00);
     line-height: 8px;
-    font-size: 24px;
+    font-size: 12px;
   }
   .logo{
     visibility: hidden;
@@ -267,6 +267,6 @@ footer {
 
 iframe{
   width: 600px;
-  height: 450px; 
+  height: 450px;
   border:0;
 }
