@@ -246,7 +246,11 @@ p {
 @media only screen and (min-resolution: 200dpi), (min-width:1400px) {
   #flav1, #flav2, #flav3, #flav4, #flav5, #flav6 {
     /*font-size: 120%;*/
-    font-size: 6.6em;
+    font-size: 5em;
+  }
+
+  body {
+    padding-top: 65px !important;
   }
 }
 
@@ -258,16 +262,16 @@ p {
 @media only screen and (max-width:800px) {
 
   #flav1, #flav2, #flav3, #flav4, #flav5, #flav6 {
-    font-size: 3em;
+    font-size: 3.33em;
   }
 
  .topstuff{
-   font-size: 1.75em;
+   font-size: 2.5em;
    padding: 0;
  }
 
  body {
-   padding-top: 60px !important;
+   padding-top: 65px !important;
  }
 
  iframe {
