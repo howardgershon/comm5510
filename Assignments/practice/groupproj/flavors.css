@@ -258,11 +258,11 @@ p {
 @media only screen and (max-width:800px) {
 
   #flav1, #flav2, #flav3, #flav4, #flav5, #flav6 {
-    font-size: 3.33em;
+    font-size: 3em;
   }
 
  .topstuff{
-   font-size: 2.5em;
+   font-size: 2em;
    padding: 0;
  }
 
