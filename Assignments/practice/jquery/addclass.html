@@ -16,6 +16,13 @@
   $(function() {
     $('#orderedlist').addClass('red');
     $('#orderedlist > li:last').addClass('blue');
+
+    $('#orderedlist li').hover(function(){
+      $(this).addClass('green');},
+      function(){
+        $(this).removeClass('green');
+      });
+    })
   });
 </script>
 
