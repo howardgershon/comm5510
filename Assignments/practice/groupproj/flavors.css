@@ -3,7 +3,7 @@ body {
 }
 
 .topstuff {
-  font-size: 50px;
+  font-size: 4.16em;
   font-family: 'Open Sans', sans-serif;
   color: white;
   text-align: center;
@@ -246,7 +246,7 @@ p {
 @media only screen and (min-resolution: 200dpi), (min-width:1400px) {
   #flav1, #flav2, #flav3, #flav4, #flav5, #flav6 {
     /*font-size: 120%;*/
-    font-size: 80px;
+    font-size: 6.6em;
   }
 }
 
@@ -258,11 +258,11 @@ p {
 @media only screen and (max-width:800px) {
 
   #flav1, #flav2, #flav3, #flav4, #flav5, #flav6 {
-    font-size: 40px;
+    font-size: 3.33em;
   }
 
  .topstuff{
-   font-size: 30px;
+   font-size: 2.5em;
    padding: 0;
  }
 

@@ -156,7 +156,7 @@ footer {
     width: 50%;
   }
   #navbar ul {
-    font-size: 18px;
+    font-size: 1.5em;
   }
 }
 @media only screen and (max-width: 800px) {
@@ -173,7 +173,7 @@ footer {
     margin: 0px auto;
   }
   #navbar ul {
-    font-size: 12px;
+    font-size: 1em;
   }
 
   .logo{
@@ -253,7 +253,7 @@ footer {
 }
 
 .topstuff {
-  font-size: 50px;
+  font-size: 4.16em;
   font-family: 'Open Sans', sans-serif;
   color: white;
   text-align: center;
