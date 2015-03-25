@@ -181,7 +181,7 @@ footer {
     visibility: hidden;
   }
   iframe{
-    max-width:450px;
+    max-width:50%;
   }
 }
 @media only screen and (max-width: 420px) {
