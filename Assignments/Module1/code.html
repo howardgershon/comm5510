@@ -7,13 +7,11 @@
 
   <link href='http://fonts.googleapis.com/css?family=Roboto:500,900,100,300,700,400' rel='stylesheet' type='text/css'>
   <script src='//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js'> </script>
-  <!--
+
   <script type='text/javascript' src='http://playground.kansascitystandard.com/js/jquerymenu.js'></script>
--->
+
   <link rel='stylesheet' href='css/sub.css' type='text/css'>
   <script src='js/kode.js'></script>
-
-
 
   <!-- [if it IE 9]>
   <script src='../Semantic HTML/js/html5shiv.js'> </script>
@@ -37,31 +35,13 @@
       <h2> JQuery </h2> <br>
       <p>
         Coding JavaScript in such a way that elements are as dynamic as I want them to be can be a difficult task. JQuery helps with this. JQuery is a library that makes manipulation of the DOM much easier by providing the developer with many functions already written. Below is little example made with JQuery.<br>
-        <div id='cont'><div class='jq'>1</div>
+        <span style="text-align:center;"><div class='jq'>1</div>
         <div class='jq'>2</div>
         <div class='jq'>3</div>
         <div class='jq'>4</div>
-        <span class='close'> x </span></div>
+        <span class='close'> x </span></span>
       </p>
     </section>
-
-    <script>
-    $(document).ready(function(){
-    $('.close').hide();
-    $('.jq').click(function(){
-        topPos = $('.menu').top;
-        $(this).animate({width:500, height: 500, position: 'absolute', top: topPos});
-        $('.jq').not(this).animate({width: 0, opacity: 0, padding: 0});
-        $('.close').show(1000);
-    });
-    $('.close').click(function(){
-        $('.jq').css({padding: 10});
-        $('.jq').fadeIn();
-        $('.jq').animate({width: '100 px', height: '100 px', opacity:1});
-        $('.close').hide();
-    });
-  });
-    </script>
 
   </main>
 </body>
