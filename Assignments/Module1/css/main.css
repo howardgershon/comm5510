@@ -6,7 +6,7 @@ body {
   text-align: center;
 }
 
-#background::before {
+#background {
   position:absolute;
   top:0;
   bottom:0;
