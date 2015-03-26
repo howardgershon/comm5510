@@ -41,6 +41,11 @@ a.visited {
   color: blue;
 }
 
+#cont {
+  text-align: center;
+  padding: 10px;
+}
+
 section h2 {
   clear: both;
   width: 100%;
