@@ -19,6 +19,10 @@ section {
   margin=auto;
 }
 
+#cont{
+  margin: auto;
+}
+
 #background {
   position:absolute;
   top:0;
