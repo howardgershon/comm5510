@@ -4,9 +4,6 @@ body {
   padding: 0;
   margin: 0;
   text-align: center;
-}
-
-body::before {
   background-image : url('../assets/train.jpg');
   background-size: cover;
   background-repeat: no-repeat;
