@@ -15,6 +15,10 @@ section {
   margin: 0;
 }
 
+.jq {
+  margin=auto;
+}
+
 #background {
   position:absolute;
   top:0;
