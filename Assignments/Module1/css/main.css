@@ -4,6 +4,12 @@ body {
   padding: 0;
   margin: 0;
   text-align: center;
+}
+
+#background {
+  position:absolute;
+  top:0;
+  bottom:0;
   background-image : url('../assets/train.jpg');
   background-size: cover;
   background-repeat: no-repeat;
