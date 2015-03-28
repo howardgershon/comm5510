@@ -42,3 +42,5 @@ window.addEventListener('load', function(){
 $(function () {
   $(".latex").latex();
 });
+
+// add d3 code
