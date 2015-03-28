@@ -20,3 +20,7 @@ $(document).ready(function () {
        $('.menu-icon').toggleClass('on');
     });
 });
+
+window.addEventListener('scroll', function(){
+  content.style.opacity = (window.innerHeight-3*window.scrollY)/window.innerHeight;
+}, false);
