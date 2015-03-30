@@ -21,6 +21,8 @@ $(document).ready(function () {
     });
 });
 
+var content = document.getElementById('num1');
+
 window.addEventListener('scroll', function(){
   content.style.opacity = (window.innerHeight-3*window.scrollY)/window.innerHeight;
 }, false);
