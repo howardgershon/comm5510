@@ -21,6 +21,7 @@ $(document).ready(function () {
     });
 });
 
+// this need to be fixed
 var content = document.getElementById('num1');
 
 window.addEventListener('scroll', function(){
