@@ -26,19 +26,25 @@
       animation: shrink 10s linear;
     }
     @-webkit-keyframes rotate {
-      from {
+      0% {
         -webkit-transform: rotate(0deg);
       }
-      to {
+      90% {
         -webkit-transform: rotate(1440deg);
+      }
+      100% {
+        -webkit-transform: rotate(0deg);
       }
     }
     @keyframes rotate {
-      from {
+      0% {
         transform: rotate(0deg);
       }
-      to {
+      90% {
         transform: rotate(1440deg);
+      }
+      100% {
+        -webkit-transform: rotate(0deg);
       }
     }
     @keyframes grow {
