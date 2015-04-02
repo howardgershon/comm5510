@@ -1,2 +1,29 @@
 <!-- SHTML Wrapper - 404 Not Found -->
 <!--#exec cgi="/cgi-sys/fourohfour.cgi" -->
+
+<html>
+
+<head>
+	<title> 404 </title>
+</head>
+
+<style>
+
+body {
+	background-image: url("../construction.jpg");
+	background-size: cover;
+	color:white;
+	font-family: sans-serif;
+	font-size: 100pt;
+}
+
+</style>
+
+<body>
+
+<h1> 404! </h1>
+
+</body>
+
+
+</html>
