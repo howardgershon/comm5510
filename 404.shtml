@@ -7,7 +7,7 @@
 <style>
 
 body {
-	background-image: url("../construction.jpg");
+	background-image: url("construction.jpg");
 	background-size: cover;
 	color:white;
 	font-family: sans-serif;
