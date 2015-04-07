@@ -33,9 +33,9 @@
   <script src="http://d3js.org/d3.v3.min.js"></script>
   <script src="http://d3js.org/topojson.v1.min.js"></script>
   <script>
-  var margin = {top: 20, right: 100, bottom: 30, left: 100},
-      width = 600,
-      height = 400;
+
+    var width = 1200,
+      height = 800;
 
     var border = 5;
     var bordercolor = 'black';
@@ -106,14 +106,14 @@
   <!-- add interactive chart here -->
 
   <script>
-    n = {
+    var margin = {
       top: 20,
       right: 100,
       bottom: 30,
       left: 100
     },
-    width = 720 - margin.left - margin.right,
-    height = 500 - margin.top - margin.bottom;
+    width = 540 - margin.left - margin.right,
+    height = 375 - margin.top - margin.bottom;
     d3.json("93.json", function(dataset) {
       var xScale = d3.scale.linear()
         .domain([0, d3.max(dataset, function(d) {
