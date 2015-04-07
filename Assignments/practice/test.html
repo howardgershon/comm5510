@@ -1,188 +1,205 @@
-
 <!DOCTYPE html>
 <meta charset="utf-8">
 <link href='http://fonts.googleapis.com/css?family=Rosarivo' rel='stylesheet' type='text/css'>
 <style>
-
-.interior { fill: #ccc; }
-
-#words {
-  position: absolute;
-  top: 30px;
-  left: 1300px;
-  font-size: 20pt;
-  font-family: 'Rosarivo', serif;
-}
-
-svg {
-  border
-}
-
-.boundary {
-  fill: transparent;
-  stroke: blue;
-  stroke-width: 2;
-  z-index: 2;
-}
-
-.district {
-  fill: #ccc;
-  stroke: #777;
-  stroke-width: 1;
-  z-index: 1;
-}
-
+  .interior {
+    fill: #ccc;
+  }
+  #words {
+    position: absolute;
+    top: 30px;
+    left: 1300px;
+    font-size: 20pt;
+    font-family: 'Rosarivo', serif;
+  }
+  svg {
+    border
+  }
+  .boundary {
+    fill: transparent;
+    stroke: blue;
+    stroke-width: 2;
+    z-index: 2;
+  }
+  .district {
+    fill: #ccc;
+    stroke: #777;
+    stroke-width: 1;
+    z-index: 1;
+  }
 </style>
+
 <body>
-<script src="http://d3js.org/d3.v3.min.js"></script>
-<script src="http://d3js.org/topojson.v1.min.js"></script>
-<script>
+  <script src="http://d3js.org/d3.v3.min.js"></script>
+  <script src="http://d3js.org/topojson.v1.min.js"></script>
+  <script>
+    var width = 1200,
+      height = 800;
 
-var width = 1200,
-    height = 800;
+    var border = 5;
+    var bordercolor = 'black';
 
-var border=5;
-var bordercolor='black';
+     //center of the u.s. 39.8282° N, 98.5795° W
 
-//center of the u.s. 39.8282° N, 98.5795° W
-
-var projection = d3.geo.conicConformal()
-    .center([0, 39.8])
-    .rotate([98.6, 0])
-    .parallels([20, 45])
-    .scale(1500)
-    .translate([width / 2, height / 2]);
-
+    var projection = d3.geo.conicConformal()
+      .center([0, 39.8])
+      .rotate([98.6, 0])
+      .parallels([20, 45])
+      .scale(1500)
+      .translate([width / 2, height / 2]);
 
 
-var path = d3.geo.path()
-    .projection(projection);
 
-var svg = d3.select("body").append("svg")
-    .attr("width", width)
-    .attr("height", height);
+    var path = d3.geo.path()
+      .projection(projection);
 
-d3.json("../../cd93.json", function(error, uk) {
-  var features = topojson.feature(uk, uk.objects.districts093).features;
-  console.log(uk.objects.districts093);
-  svg.selectAll(".district")
-      .data(features)
-    .enter().append("path")
-      .attr("class", "district")
-      .attr("d", path);
+    var svg = d3.select("body").append("svg")
+      .attr("width", width)
+      .attr("height", height);
 
-   svg.append("g")
-     .selectAll('path')
-       .data(features)
-     .enter().append('path')
-       .attr("d", path)
-       .attr("class", "district")
-       .on('mouseover', function(d){this.style.fill = '#e04836'; document.getElementById('words').innerHTML = d.properties.STATENAME + " " + d.properties.DISTRICT;})
-       .on('mouseout', function(){this.style.fill = '#ccc'; document.getElementById('words').removeChild(document.getElementById('words').firstChild);})
+    d3.json("../../cd93.json", function(error, uk) {
+      var features = topojson.feature(uk, uk.objects.districts093).features;
+      console.log(uk.objects.districts093);
+      svg.selectAll(".district")
+        .data(features)
+        .enter().append("path")
+        .attr("class", "district")
+        .attr("d", path);
 
-});
+      svg.append("g")
+        .selectAll('path')
+        .data(features)
+        .enter().append('path')
+        .attr("d", path)
+        .attr("class", "district")
+        .on('mouseover', function(d) {
+          this.style.fill = '#e04836';
+          document.getElementById('words').innerHTML = d.properties.STATENAME + " " + d.properties.DISTRICT;
+        })
+        .on('mouseout', function() {
+          this.style.fill = '#ccc';
+          document.getElementById('words').removeChild(document.getElementById('words').firstChild);
+        })
 
-// d3.json("./topojson/us.json", function(error, us){
-//
-//   svg.insert("path", ".boundary")
-//     .datum(topojson.mesh(us, us.objects.states, function(a, b) { return a !== b; }))
-//     .attr("class", "boundary")
-//     .attr("d", path);
-//
-// })
+    });
 
-var borderPath = svg.append("rect")
-  .attr("x", 0)
-  .attr("y", 0)
-  .attr("height", height)
-  .attr("width", width)
-  .style("stroke", bordercolor)
-  .style("fill", "none")
-  .style("stroke-width", border);
+     // d3.json("./topojson/us.json", function(error, us){
+     //
+     //   svg.insert("path", ".boundary")
+     //     .datum(topojson.mesh(us, us.objects.states, function(a, b) { return a !== b; }))
+     //     .attr("class", "boundary")
+     //     .attr("d", path);
+     //
+     // })
 
-</script>
+    var borderPath = svg.append("rect")
+      .attr("x", 0)
+      .attr("y", 0)
+      .attr("height", height)
+      .attr("width", width)
+      .style("stroke", bordercolor)
+      .style("fill", "none")
+      .style("stroke-width", border);
+  </script>
 
-<!-- add interactive chart here -->
+  <!-- add interactive chart here -->
 
-<script>
-
-n = {top: 20, right: 100, bottom: 30, left: 100},
+  <script>
+    n = {
+      top: 20,
+      right: 100,
+      bottom: 30,
+      left: 100
+    },
     width = 720 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
-d3.json("113.json", function(dataset){
-var xScale = d3.scale.linear()
-    .domain([0, d3.max(dataset, function(d){ return d[" ideology"]; })])
-    .range([0, width]);
+    d3.json("93.json", function(dataset) {
+      var xScale = d3.scale.linear()
+        .domain([0, d3.max(dataset, function(d) {
+          return d[" ideology"];
+        })])
+        .range([0, width]);
 
-var yScale = d3.scale.linear()
-    .domain([0, d3.max(dataset, function(d){ return d[" leadership"]; })])
-    .range([height, 0]);
+      var yScale = d3.scale.linear()
+        .domain([0, d3.max(dataset, function(d) {
+          return d[" leadership"];
+        })])
+        .range([height, 0]);
 
-var xAxis = d3.svg.axis()
-    .scale(xScale)
-    //.ticks([])
-    .orient("bottom")
-    .innerTickSize(-height)
-    .outerTickSize(0)
-    .tickPadding(10);
+      var xAxis = d3.svg.axis()
+        .scale(xScale)
+      //.ticks([])
+      .orient("bottom")
+        .innerTickSize(-height)
+        .outerTickSize(0)
+        .tickPadding(10);
 
-var yAxis = d3.svg.axis()
-    .scale(yScale)
-    .orient("left")
-    .innerTickSize(-width)
-    .outerTickSize(0)
-    .tickPadding(10);
+      var yAxis = d3.svg.axis()
+        .scale(yScale)
+        .orient("left")
+        .innerTickSize(-width)
+        .outerTickSize(0)
+        .tickPadding(10);
 
-var colors = {" Democrat":"blue", " Republican":"red", " Independent":"green"};
+      var colors = {
+        " Democrat": "blue",
+        " Republican": "red",
+        " Independent": "green"
+      };
 
-var svg = d3.select("#chart").append("svg")
-    .attr("width", width + margin.left + margin.right)
-    .attr("height", height + margin.top + margin.bottom)
-  .append("g")
-    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+      var svg = d3.select("#chart").append("svg")
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height + margin.top + margin.bottom)
+        .append("g")
+        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-  svg.append("g")
-      .attr("class", "x axis")
-      .attr("transform", "translate(0," + height + ")")
-      .call(xAxis)
+      svg.append("g")
+        .attr("class", "x axis")
+        .attr("transform", "translate(0," + height + ")")
+        .call(xAxis)
 
-  svg.append("g")
-      .attr("class", "y axis")
-      .call(yAxis)
+      svg.append("g")
+        .attr("class", "y axis")
+        .call(yAxis)
 
-  var tooltip = d3.select("body").append("div")
-    .attr("class", "tooltip")
-    .style("opacity", 0);
+      var tooltip = d3.select("body").append("div")
+        .attr("class", "tooltip")
+        .style("opacity", 0);
 
-  svg.selectAll(".dot")
-      .data(dataset)
-    .enter().append("circle")
+      svg.selectAll(".dot")
+        .data(dataset)
+        .enter().append("circle")
       //.attr("class", "dot")
       .attr("r", 3.5)
-      .attr("cx", function(d) { return xScale(d[" ideology"]); })
-      .attr("cy", function(d) { return yScale(d[" leadership"]); })
-      .style("fill", function(d) { return colors[d[" party"]];})
-      .on("mouseover", function(d) {
+        .attr("cx", function(d) {
+          return xScale(d[" ideology"]);
+        })
+        .attr("cy", function(d) {
+          return yScale(d[" leadership"]);
+        })
+        .style("fill", function(d) {
+          return colors[d[" party"]];
+        })
+        .on("mouseover", function(d) {
           tooltip.transition()
-               .duration(200)
-               .style("opacity", .9);
-          tooltip.html(d[" name"] )
-               .style("left", (d3.event.pageX + 5) + "px")
-               .style("top", (d3.event.pageY - 18) + "px");
-      })
-      .on("mouseout", function(d) {
+            .duration(200)
+            .style("opacity", .9);
+          tooltip.html(d[" name"])
+            .style("left", (d3.event.pageX + 5) + "px")
+            .style("top", (d3.event.pageY - 18) + "px");
+        })
+        .on("mouseout", function(d) {
           tooltip.transition()
-               .duration(500)
-               .style("opacity", 0);
-      });
-});
+            .duration(500)
+            .style("opacity", 0);
+        });
+    });
+  </script>
 
-</script>
+  <!-- add tweening to the chart when switching -->
 
-<!-- add tweening to the chart when switching -->
+  <!-- connect mouseover to chart -->
 
-<!-- connect mouseover to chart -->
-
-<div id='words'> </div>
-
-<div id='chart'> </div>
+  <div id='words'></div>
+<br>
+  <div id='chart'></div>
