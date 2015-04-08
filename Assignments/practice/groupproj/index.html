@@ -39,7 +39,8 @@
     </nav>
     <object type="image/svg+xml" data="images/crab.svg" class='logo'>Your browser does not support SVG</object>
     <div class='content'>
-      <p>Did you know our ice cream is made fresh every day in every store? Churned from the finest ingredients and mixed with your choice of candy, cakes, fruits, or nuts. We proudly serve the best tasting, made-to-order ice cream you have ever had. If you have allergies, or require special considerations before visiting, please consult our Ice Cream information page.</p>
+      <p>Did you know our ice cream is made fresh every day in every store? Churned from the finest ingredients and mixed with your choice of candy, cakes, fruits, or nuts. We proudly serve the best tasting, made-to-order ice cream you have ever had. If
+        you have allergies, or require special considerations before visiting, please consult our Ice Cream information page.</p>
     </div>
     <ul class="rslides">
       <li>
@@ -54,7 +55,8 @@
       <li>
         <img src="./images/crabicecream4.jpg" alt="">
       </li>
-    </ul><br>
+    </ul>
+    <br>
     <script>
       $(function() {
         $(".rslides").responsiveSlides();
@@ -77,6 +79,17 @@
         namespace: "rslides", // String: Change the default namespace used
         before: function() {}, // Function: Before callback
         after: function() {} // Function: After callback
+      });
+
+      $(document).ready(function() {
+
+        var docHeight = $(window).height();
+        var footerHeight = $('footer').height();
+        var footerTop = $('footer').position().top + footerHeight;
+
+        if (footerTop < docHeight) {
+          $('footer').css('margin-top', 10 + (docHeight - footerTop) + 'px');
+        }
       });
     </script>
     <footer>Copyright 2015 Dashing Crabs and Sandy Crab Creamery</footer>
