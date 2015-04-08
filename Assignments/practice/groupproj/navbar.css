@@ -278,6 +278,7 @@ iframe{
 }
 
 .rslides {
+	height: 400px;
   position: relative;
   list-style: none;
   overflow: hidden;
