@@ -79,6 +79,7 @@ footer {
   font-family: 'Open Sans', sans-serif;
   color: white;
   font-size: 85%;
+	width: 100%;
 }
 .fixed {
   position: fixed;
