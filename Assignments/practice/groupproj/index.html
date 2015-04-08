@@ -10,6 +10,7 @@
   <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <script src="./js/responsiveslides.min.js"></script>
   <meta charset="UTF-8">
   <title>Sandy Crab Ice Cream</title>
 </head>
@@ -39,6 +40,44 @@
     <div class='content'>
       <p>Did you know our ice cream is made fresh every day in every store? Churned from the finest ingredients and mixed with your choice of candy, cakes, fruits, or nuts. We proudly serve the best tasting, made-to-order ice cream you have ever had. If you have allergies, or require special considerations before visiting, please consult our Ice Cream information page.</p>
     </div>
+    <ul class="rslides">
+      <li>
+        <img src="./images/icecream1.jpg" alt="">
+      </li>
+      <li>
+        <img src="./images/icecream2.jpg" alt="">
+      </li>
+      <li>
+        <img src="./images/icecream3.jpg" alt="">
+      </li>
+      <li>
+        <img src="./images/icecream4.jpg" alt="">
+      </li>
+    </ul>
+    <script>
+      $(function() {
+        $(".rslides").responsiveSlides();
+      });
+
+      $(".rslides").responsiveSlides({
+        auto: true, // Boolean: Animate automatically, true or false
+        speed: 500, // Integer: Speed of the transition, in milliseconds
+        timeout: 4000, // Integer: Time between slide transitions, in milliseconds
+        pager: false, // Boolean: Show pager, true or false
+        nav: false, // Boolean: Show navigation, true or false
+        random: false, // Boolean: Randomize the order of the slides, true or false
+        pause: false, // Boolean: Pause on hover, true or false
+        pauseControls: true, // Boolean: Pause when hovering controls, true or false
+        prevText: "Previous", // String: Text for the "previous" button
+        nextText: "Next", // String: Text for the "next" button
+        maxwidth: "100px", // Integer: Max-width of the slideshow, in pixels
+        navContainer: "", // Selector: Where controls should be appended to, default is after the 'ul'
+        manualControls: "", // Selector: Declare custom pager navigation
+        namespace: "rslides", // String: Change the default namespace used
+        before: function() {}, // Function: Before callback
+        after: function() {} // Function: After callback
+      });
+    </script>
     <footer>Copyright 2015 Dashing Crabs and Sandy Crab Creamery</footer>
   </div>
 </body>
