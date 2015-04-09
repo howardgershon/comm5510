@@ -32,7 +32,7 @@ setInterval( function(){
 
   b.appendChild(svg);
 
-}, 50);
+}, 5000);
 
 function normal_random(){
   var pos = [ Math.random(), Math.random() ];
