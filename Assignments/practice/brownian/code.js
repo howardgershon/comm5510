@@ -39,7 +39,7 @@ window.onload = function brownian() {
 
     b.appendChild(svg);
 
-  }, 5000);
+  }, 50);
 
   function normal_random() {
     var pos = [Math.random(), Math.random()];
