@@ -1,0 +1,11 @@
+body {
+  background-color: #517281;
+  color: white;
+  font-family: 'Domine', serif;
+  font-size: 2em;
+}
+
+#taco, svg {
+  height: 1000px;
+  width: 1000px;
+}
