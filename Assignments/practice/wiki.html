@@ -115,7 +115,7 @@ var ws = new WebSocket('ws://wikimon.hatnote.com/en/');
       .on("mouseover", function(d){d3.select(this).style('fill', '#e04836');
                     populate(d.title, d.user, d.url, d.cs);
                     d3.select("#infofoot").style("display", 'block');})
-      .on("mouseout", function(d){d3.select(this).style('fill', '#5696bc');});
+      .on("mouseout", function(d){d3.select(this).style('fill', function(d){return (d.bot) ? '#f69a98':'#5696bc';});});
 
   };
 </script>
