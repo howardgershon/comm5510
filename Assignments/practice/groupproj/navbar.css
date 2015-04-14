@@ -235,7 +235,7 @@ footer {
   padding: 10px;
   /*background-color: #d9b499; */
   border-radius: 5px;
-	cursor: hand;
+	cursor: pointer;
   line-height: 50px;
   font-family: 'Open Sans', sans-serif;
   opacity: 1 !important;
