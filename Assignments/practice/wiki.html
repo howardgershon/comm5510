@@ -68,7 +68,7 @@ var ws = new WebSocket('ws://wikimon.hatnote.com/en/');
     var posy = Math.random()*document.documentElement.scrollHeight;
 
     //build info object
-    info = {cs : data.change_size, x : posx, y : posy, title : data.page_title, url : data.url, user: data.user };
+    info = {cs : data.change_size, x : posx, y : posy, title : data.page_title, url : data.url, user: data.user, bot: data.is_bot};
     edits.push(info);
 
     place();
@@ -106,7 +106,7 @@ var ws = new WebSocket('ws://wikimon.hatnote.com/en/');
       .data(edits)
       .enter().append("circle")
       .style("stroke", "white")
-      .style("fill", "#5696bc")
+      .style("fill", function(d){return (d.bot) ? '#f69a98':'#5696bc';})
       .style('opacity', '1')
       .attr("r", function (d){return (Math.log(Math.abs(d.cs)+1)*5+10)})
       .attr("cx", function(d){return d.x+Math.log(Math.abs(d.cs)+1)*5+10})
