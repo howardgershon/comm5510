@@ -12,7 +12,6 @@ body {
 #flav1, #flav2, #flav3, #flav4, #flav5, #flav6 {
   line-height: 200px;
   text-align: center;
-  margin-bottom: 0;
 }
 
 #flav1 {
@@ -62,7 +61,7 @@ p {
 
 #flav2 {
   position: absolute;
-  top: 345px;
+  top: 335px;
   font-family: 'Open Sans', sans-serif;
   height: 200px;
   width: 100%;
