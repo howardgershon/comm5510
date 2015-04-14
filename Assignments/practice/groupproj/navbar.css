@@ -276,6 +276,7 @@ iframe{
   width: 90%;
   height: 450px;
   border:0;
+	margin: auto;
 }
 
 .rslides {
