@@ -28,7 +28,7 @@ body {
 
 p {
   opacity: 1;
-  font-size: .4em !important;
+  font-size: .4em;
 }
 
 #mask1 {
