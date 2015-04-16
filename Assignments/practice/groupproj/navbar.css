@@ -180,6 +180,9 @@ footer {
   .logo{
     visibility: hidden;
   }
+	.topstuff {
+		font: 1em;
+	}
   iframe{
     max-width:100%;
   }
@@ -206,6 +209,9 @@ footer {
   .margin {
     padding: 10px;
   }
+	.topstuff {
+		font: 1em;
+	}
   body {
     background-image: url("");
     padding-top: 75px;
