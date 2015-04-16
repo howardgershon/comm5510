@@ -274,7 +274,7 @@ iframe{
     visibility: hidden;
   }
 	.topstuff {
-		font: .5em;
+		font-size: .5em;
 	}
   iframe{
     max-width:100%;
@@ -303,7 +303,7 @@ iframe{
     padding: 10px;
   }
 	.topstuff {
-		font: .5em;
+		font-size: .5em;
 	}
   body {
     background-image: url("");
