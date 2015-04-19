@@ -124,7 +124,7 @@
 </head>
 
 <body>
-  <svg class='cont'>
+  <svg class='cont' id='fresh'>
     <path d='M 20 10
              L 500 10
              A 10,10 0 0,1 510,20
@@ -159,7 +159,7 @@
       function _drawTape() {
         var opts, svg;
         opts = {
-          selector: '#cont',
+          selector: '#fresh',
           duration: '9000'
         };
         svg = new Walkway(opts);
