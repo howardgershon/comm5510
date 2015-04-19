@@ -2,10 +2,11 @@
 <html>
 
 <head>
+  <script src="walkway.min.js"></script>
   <style>
-    .cont{
-        position: absolute;
-        left: 400px;
+    .cont {
+      position: absolute;
+      left: 400px;
     }
     body {
       background-color: #517281;
@@ -152,6 +153,23 @@
              L 410 330' stroke='#fff' stroke-width='3' stroke-linejoin="round" fill="none" />
 
   </svg>
+  <script>
+    (function() {
+
+      function _drawTape() {
+        var opts, svg;
+        opts = {
+          selector: '#fresh',
+          duration: '9000'
+        };
+        svg = new Walkway(opts);
+        svg.draw();
+      }
+
+      _drawTape();
+
+    })();
+  </script>
 </body>
 
 </html>
