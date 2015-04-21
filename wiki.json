@@ -15,3 +15,27 @@ rev_id: "656472135"
 summary: "Warning [[Special:Contributions/209.118.12.202|209.118.12.202]] - #2"
 url: "http://en.wikipedia.org/w/index.php?diff=656472716&oldid=656472135"
 user: "ClueBot NG"
+
+{
+    "action": "hit",
+    "change_size": null,
+    "flags": null,
+    "geo_ip": {
+        "city": "Heino",
+        "country_name": "Netherlands",
+        "latitude": 52.4333,
+        "longitude": 6.2333,
+        "region_name": "Provincie Overijssel"
+    },
+    "hashtags": [],
+    "is_anon": true,
+    "is_bot": false,
+    "is_minor": false,
+    "is_new": false,
+    "is_unpatrolled": false,
+    "mentions": [],
+    "ns": "Special",
+    "page_title": "Special:Log/abusefilter",
+    "summary": "77.175.135.192 triggered [[Special:AbuseFilter/655|filter 655]], performing the action \"edit\" on [[The Beetle (novel)]]. Actions taken: none ([[Special:AbuseLog/11975303|details]])",
+    "user": "77.175.135.192"
+}
